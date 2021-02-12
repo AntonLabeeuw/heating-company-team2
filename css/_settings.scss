@@ -11,6 +11,7 @@ $img-margin-B: 3rem;
 $img-border-radius: 10px;
 $btn-border-radius: 17px;
 $btn-padding-L-R: 2rem;
+$btn-padding-T-B: 0.5rem;
 $btn-margin-T: 3rem;
 $btn-margin-B: 2rem;
 $h1-margin-T: 4rem;
@@ -21,3 +22,19 @@ $p-margin-T: 1rem;
 $p-margin-B: 2rem;
 $icon-margin-T: 2rem;
 //FOOTER: STANDAARD 5 rem tussen laatste element en footer
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+);

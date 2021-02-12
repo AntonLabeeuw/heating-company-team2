@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $font-family;
+}
+h1 {
+    font-size: 3.2rem;
+    color: $color-red;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+    color: $color-orange;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2rem;
+    color: $color-orange;
+}
+p {
+    font-size: 1.6rem;
+    color: $color-blue;
+}
+
+.rem {
+    background-color: $color-orange;
+    height: 40rem;
+    width: 40rem;
+}
+.px {
+    background-color: $color-orange;
+    height: 400px;
+    width: 400px;
+}

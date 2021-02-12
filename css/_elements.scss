@@ -8,28 +8,41 @@ h1 {
     font-size: 3.2rem;
     color: $color-red;
     font-weight: bold;
+    margin-top: $h1-margin-T;
+    margin-bottom: $h1-margin-B;
 }
+
 h2 {
     font-size: 2rem;
     color: $color-orange;
     font-weight: bold;
+    margin-top: $h2-margin-T-B;
+    margin-bottom: $h2-margin-T-B;
 }
 h3 {
     font-size: 2rem;
     color: $color-orange;
+    margin-top: $h3-margin-T;
 }
 p {
     font-size: 1.6rem;
     color: $color-blue;
+    margin-top: $p-margin-T;
+    margin-bottom: $p-margin-B;
 }
 
-.rem {
+.button {
+    font-size: 1.6rem;
+    color: $color-grey;
+    border-radius: $btn-border-radius;
     background-color: $color-orange;
-    height: 40rem;
-    width: 40rem;
-}
-.px {
-    background-color: $color-orange;
-    height: 400px;
-    width: 400px;
+    padding-left: $btn-padding-L-R;
+    padding-right: $btn-padding-L-R;
+    padding-top: $btn-padding-T-B;
+    padding-bottom: $btn-padding-T-B;
+    margin-top: $btn-margin-T;
+    margin-bottom: $btn-margin-B;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }

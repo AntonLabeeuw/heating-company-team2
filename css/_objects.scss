@@ -12,4 +12,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    // de hover van eeen nav button zal anders worden
+    &-nav {
+        margin-right: 25rem;
+        &-active {
+            background-color: $color-red;
+        }
+    }
 }

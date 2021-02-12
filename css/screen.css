@@ -51,4 +51,59 @@ p {
   text-decoration: none;
   display: inline-block;
 }
+
+.o-button-nav {
+  margin-right: 25rem;
+}
+
+.o-button-nav-active {
+  background-color: #e84e1b;
+}
+
+.c-banner-klok {
+  height: 22rem;
+  background-color: #023c48;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-banner-klok-text {
+  padding-top: 5rem;
+  color: #edf3f4;
+}
+
+.c-banner-klok-text-xl {
+  color: #edf3f4;
+  font-size: 6rem;
+}
+
+.c-banner-contact {
+  height: 8.5rem;
+  background-color: #023c48;
+}
+
+.c-banner-contact-text {
+  color: #edf3f4;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+.c-banner-contact-btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  color: #edf3f4;
+  border-radius: 17px;
+  background-color: #f29100;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 /*# sourceMappingURL=screen.css.map */

@@ -11,34 +11,45 @@ h1 {
   font-size: 3.2rem;
   color: #e84e1b;
   font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 2rem;
   color: #f29100;
   font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 2rem;
   color: #f29100;
+  margin-top: 1rem;
 }
 
 p {
   font-size: 1.6rem;
   color: #023c48;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.rem {
+.button {
+  font-size: 1.6rem;
+  color: #edf3f4;
+  border-radius: 17px;
   background-color: #f29100;
-  height: 40rem;
-  width: 40rem;
-}
-
-.px {
-  background-color: #f29100;
-  height: 400px;
-  width: 400px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /*!

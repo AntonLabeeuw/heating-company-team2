@@ -30,19 +30,3 @@ p {
     margin-top: $p-margin-T;
     margin-bottom: $p-margin-B;
 }
-
-.button {
-    font-size: 1.6rem;
-    color: $color-grey;
-    border-radius: $btn-border-radius;
-    background-color: $color-orange;
-    padding-left: $btn-padding-L-R;
-    padding-right: $btn-padding-L-R;
-    padding-top: $btn-padding-T-B;
-    padding-bottom: $btn-padding-T-B;
-    margin-top: $btn-margin-T;
-    margin-bottom: $btn-margin-B;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}

@@ -1,0 +1,36 @@
+.c-footer{
+    border-top: $color-orange 3px solid;
+    background-color: $color-grey;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 5rem;
+        padding-top: 2.8px;
+        padding-bottom: 6.5px;
+    }
+
+    &__copyright{
+        padding-top: 19px;
+    }
+
+    &__icons{
+        display: flex;
+        padding-top: 16px;
+    }
+
+    &__icon{
+        height: 30px;
+
+        &:not(:last-child){
+            padding-right: 17px;
+        }
+    }
+}
+
+img{
+    width: 100%;
+}

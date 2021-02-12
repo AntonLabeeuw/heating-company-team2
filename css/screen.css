@@ -11751,4 +11751,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.c-review-titel {
+  display: block;
+  margin: 0rem;
+}
 /*# sourceMappingURL=screen.css.map */

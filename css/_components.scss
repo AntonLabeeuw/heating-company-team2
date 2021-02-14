@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.c-contactgegevens{
+    margin-bottom: -3.2px;
+}
+
+.c-banner-klok {
+    height: 22rem;
+    background-color: $color-blue;
+    text-align: center;
+    align-self: center;
+
+    &-text {
+        padding-top: 5rem;
+        color: $color-grey;
+        &-xl {
+            color: $color-grey;
+            font-size: 6rem;
+        }
+    }
+}
+
+.c-banner-contact {
+    height: 8.5rem;
+    background-color: $color-blue;
+    &-text {
+        color: $color-grey;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+    &-btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        padding-top: 2rem;
+        color: $color-grey;
+        border-radius: $btn-border-radius;
+        background-color: $color-orange;
+        padding-left: $btn-padding-L-R;
+        padding-right: $btn-padding-L-R;
+        padding-top: $btn-padding-T-B;
+        padding-bottom: $btn-padding-T-B;
+        margin-top: 2.5rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+

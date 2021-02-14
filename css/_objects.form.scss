@@ -1,0 +1,23 @@
+.o-form{
+    
+    &__input{
+        border-color: #707070;
+        border-radius: 5px;
+        height: 50px;
+        font-size: 1.6rem;
+        color: #CACACA;
+        padding-left: 3rem;
+    }
+
+    &__checkbox-label{
+        font-size: 1.6rem;
+    }
+}
+
+textarea.form-control{
+    border-color: #707070;
+    border-radius: 5px;
+    height: 166px;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+}

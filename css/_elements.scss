@@ -8,28 +8,25 @@ h1 {
     font-size: 3.2rem;
     color: $color-red;
     font-weight: bold;
+    margin-top: $h1-margin-T;
+    margin-bottom: $h1-margin-B;
 }
+
 h2 {
     font-size: 2rem;
     color: $color-orange;
     font-weight: bold;
+    margin-top: $h2-margin-T-B;
+    margin-bottom: $h2-margin-T-B;
 }
 h3 {
     font-size: 2rem;
     color: $color-orange;
+    margin-top: $h3-margin-T;
 }
 p {
     font-size: 1.6rem;
     color: $color-blue;
-}
-
-.rem {
-    background-color: $color-orange;
-    height: 40rem;
-    width: 40rem;
-}
-.px {
-    background-color: $color-orange;
-    height: 400px;
-    width: 400px;
+    margin-top: $p-margin-T;
+    margin-bottom: $p-margin-B;
 }

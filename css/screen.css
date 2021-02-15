@@ -69,6 +69,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border: 1px solid #f29100;
 }
 
 @media screen and (max-width: 500px) {
@@ -84,8 +85,33 @@ p {
   }
 }
 
+.o-button-arr:hover {
+  background-color: pink;
+}
+
+.o-button-filter {
+  background-color: #809da3;
+  border: 1px solid #809da3;
+}
+
+.o-button-filter:hover {
+  background-color: #023c48;
+  border: 1px solid #023c48;
+}
+
+.o-button-filter-active {
+  background-color: #f29100;
+}
+
 .o-button-nav-active {
   background-color: #e84e1b;
+  border: 1px solid #e84e1b;
+}
+
+.o-button-nav:hover {
+  background-color: white;
+  border: 1px solid #f29100;
+  color: black;
 }
 
 .c-banner-klok {

@@ -30,3 +30,11 @@ p {
     margin-top: $p-margin-T;
     margin-bottom: $p-margin-B;
 }
+
+a{
+    color: $color-orange;
+
+    &:hover{
+        color: $color-blue;
+    }
+}

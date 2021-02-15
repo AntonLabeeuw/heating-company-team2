@@ -56,6 +56,8 @@ p {
 
 .o-button {
   font-size: 1.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #edf3f4;
   border-radius: 17px;
   background-color: #f29100;
@@ -85,8 +87,30 @@ p {
   }
 }
 
-.o-button-arr:hover {
-  background-color: pink;
+.o-button--offerte {
+  max-width: 16rem;
+  min-width: 16rem;
+}
+
+.o-button--noodnummer {
+  background-color: #e84e1b;
+  border: 1px solid #e84e1b;
+  min-width: 16rem;
+  max-width: 16rem;
+}
+
+.o-button--noodnummer:hover {
+  border: 1px solid #e84e1b;
+  background-color: white;
+  color: #023c48;
+}
+
+.o-button--noodnummer:hover span {
+  display: none;
+}
+
+.o-button--noodnummer:hover:before {
+  content: "+32 56 56 56 16";
 }
 
 .o-button-filter {
@@ -176,5 +200,56 @@ p {
     width: 100%;
     left: 2.4rem;
   }
+}
+
+.effect {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 16px;
+  width: 205px;
+  overflow: hidden;
+}
+
+.effect.effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect-1:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect-1:hover {
+  text-indent: -20px;
+}
+
+.effect.effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -5,6 +5,7 @@
         margin-right: 0;
     }
     font-size: 1.6rem;
+    transition: 0.5s;
     color: $color-grey;
     border-radius: $btn-border-radius;
     background-color: $color-orange;
@@ -19,10 +20,27 @@
     text-decoration: none;
     display: inline-block;
     border: 1px solid $color-orange;
-    // de hover van eeen nav button zal anders worden
-    &-arr {
+    // verschillende versies
+    &--offerte {
+        max-width: 16rem;
+        min-width: 16rem;
+    }
+    &--noodnummer {
+        background-color: $color-red;
+        border: 1px solid $color-red;
+        min-width: 16rem;
+        max-width: 16rem;
         &:hover {
-            background-color: pink;
+            border: 1px solid $color-red;
+            background-color: white;
+            color: $color-blue;
+
+            & span {
+                display: none;
+            }
+            &:before {
+                content: "+32 56 56 56 16";
+            }
         }
     }
     &-filter {

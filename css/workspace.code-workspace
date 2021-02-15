@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\materialize-src-v1.0.0\\materialize-src\\js"
+		},
+		{
+			"path": "..\\..\\materialize-src-v1.0.0\\materialize-src\\sass"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "heating test"
+	}
+}

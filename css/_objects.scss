@@ -1,4 +1,9 @@
 .o-button {
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
     font-size: 1.6rem;
     color: $color-grey;
     border-radius: $btn-border-radius;
@@ -9,12 +14,13 @@
     padding-bottom: $btn-padding-T-B;
     margin-top: $btn-margin-T;
     margin-bottom: $btn-margin-B;
+    margin-right: 2.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     // de hover van eeen nav button zal anders worden
     &-nav {
-        margin-right: 25rem;
+        // margin-left: 2.5rem;
         &-active {
             background-color: $color-red;
         }

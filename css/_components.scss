@@ -1,90 +1,122 @@
 .c-banner-klok {
-    height: 22rem;
-    background-color: $color-blue;
-    text-align: center;
-    align-self: center;
+  height: 22rem;
+  background-color: $color-blue;
+  text-align: center;
+  align-self: center;
 
-    &-text {
-        padding-top: 5rem;
-        color: $color-grey;
-        @media screen and (max-width: 500px) {
-            margin: 0 4rem;
-        }
-        &-xl {
-            color: $color-grey;
-            font-size: 6rem;
-            @media screen and (max-width: 500px) {
-                font-size: 4rem;
-            }
-        }
+  &-text {
+    padding-top: 5rem;
+    color: $color-grey;
+    @media screen and (max-width: 500px) {
+      margin: 0 4rem;
     }
+    &-xl {
+      color: $color-grey;
+      font-size: 6rem;
+      @media screen and (max-width: 500px) {
+        font-size: 4rem;
+      }
+    }
+  }
 }
 .c-banner-contact {
-    height: 8.5rem;
-    background-color: $color-blue;
-    margin-bottom: 5rem;
-    @media screen and (max-width: 600px) {
-        height: 16rem;
-    }
+  height: 8.5rem;
+  background-color: $color-blue;
+  margin-bottom: 5rem;
+  @media screen and (max-width: 600px) {
+    height: 16rem;
+  }
 
-    &-text {
-        color: $color-grey;
-        padding-top: 2rem;
-        display: inline-block;
+  &-text {
+    color: $color-grey;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+  &-btn {
+    @media screen and (min-width: 500px) {
+      margin-right: -0.7rem;
     }
-    &-btn {
-        @media screen and (min-width: 500px) {
-            margin-right: -0.7rem;
-        }
-        @media screen and (max-width: 500px) {
-            margin-top: 1rem;
-            margin: 0;
-            width: 100%;
-            left: 2.4rem;
-        }
+    @media screen and (max-width: 500px) {
+      margin-top: 1rem;
+      margin: 0;
+      width: 100%;
+      left: 2.4rem;
     }
+  }
 }
+.c-uspbanner {
+  background-color: $color-blue;
+  padding: 1rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+  &__background {
+    background-color: $color-blue;
+  }
+  &__text {
+    font-size: 1.6rem;
+    color: #edf3f4;
+    margin-top: 2.8rem;
+  }
+  &__title {
+    color: $color-orange;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  &__center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__icon {
+    @media screen and (max-width: 500px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 // https://1stwebdesigner.com/20-amazing-pure-css-animated-buttons/
 // een beetje aanpassingen op gedaan
 .effect {
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    /* background-color: - add your own background-color */
-    font: {
-        family: "Roboto", sans-serif; /* put your font-family */
-        size: 16px;
-    }
-    width: 205px;
-    overflow: hidden;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  /* background-color: - add your own background-color */
+  font: {
+    family: "Roboto", sans-serif; /* put your font-family */
+    size: 16px;
+  }
+  width: 205px;
+  overflow: hidden;
 }
 .effect.effect-1 {
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    content: "\f178";
+    font-family: FontAwesome;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
     transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: -20px;
 
     &:before {
-        content: "\f178";
-        font-family: FontAwesome;
-        font-size: 15px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        right: 0;
-        top: 0;
-        opacity: 0;
-        height: 100%;
-        width: 40px;
-        transition: all 0.2s linear 0s;
+      opacity: 1;
+      text-indent: 0px;
     }
-
-    &:hover {
-        text-indent: -20px;
-
-        &:before {
-            opacity: 1;
-            text-indent: 0px;
-        }
-    }
+  }
 }

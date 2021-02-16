@@ -279,6 +279,43 @@ img {
   }
 }
 
+.c-uspbanner {
+  background-color: #023c48;
+  padding: 1rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.c-uspbanner__background {
+  background-color: #023c48;
+}
+
+.c-uspbanner__text {
+  font-size: 1.6rem;
+  color: #edf3f4;
+  margin-top: 2.8rem;
+}
+
+.c-uspbanner__title {
+  color: #f29100;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.c-uspbanner__center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .c-uspbanner__icon {
+    margin-bottom: 1rem;
+  }
+}
+
 .effect {
   text-align: center;
   position: relative;

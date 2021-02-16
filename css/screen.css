@@ -225,6 +225,57 @@ p {
   color: black;
 }
 
+.o-button-effect {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 16px;
+  width: 205px;
+  overflow: hidden;
+}
+
+.o-button-effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.o-button-effect-1:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.o-button-effect-1:hover {
+  text-indent: -20px;
+}
+
+.o-button-effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
 /* navbar ******************************************************/
 .navbar {
   padding-top: 0;
@@ -411,6 +462,7 @@ i.material-icons:hover {
 
 .c-footer__icon {
   height: 30px;
+  margin-left: 3rem;
 }
 
 .c-footer__icon:not(:last-child) {
@@ -624,57 +676,6 @@ input[type="checkbox"] {
   .c-uspbanner__icon {
     margin-bottom: 1rem;
   }
-}
-
-.effect {
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  /* background-color: - add your own background-color */
-  font-family: "Roboto", sans-serif;
-  /* put your font-family */
-  font-size: 16px;
-  width: 205px;
-  overflow: hidden;
-}
-
-.effect.effect-1 {
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-}
-
-.effect.effect-1:before {
-  content: "\f178";
-  font-family: FontAwesome;
-  font-size: 15px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  height: 100%;
-  width: 40px;
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-}
-
-.effect.effect-1:hover {
-  text-indent: -20px;
-}
-
-.effect.effect-1:hover:before {
-  opacity: 1;
-  text-indent: 0px;
 }
 
 .c-login-titel {

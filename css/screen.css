@@ -15,13 +15,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-
 h2 {
   font-size: 2rem;
   color: #f29100;
@@ -30,6 +23,30 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h3 {
+  font-size: 2rem;
+  color: #f29100;
+  margin-top: 1rem;
+  font-size: 3.2rem;
+  color: #e84e1b;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f29100;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 @media screen and (max-width: 500px) {
   h2 {
@@ -43,13 +60,11 @@ h3 {
   margin-top: 1rem;
 }
 
-
 @media screen and (max-width: 500px) {
   h3 {
     font-size: 1.6rem;
   }
 }
-
 
 p {
   font-size: 1.6rem;
@@ -58,13 +73,8 @@ p {
   margin-bottom: 2rem;
 }
 
-
 .button {
   font-size: 1.6rem;
-.o-button {
-  font-size: 1.6rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   color: #edf3f4;
   border-radius: 17px;
   background-color: #f29100;
@@ -195,6 +205,90 @@ p {
   opacity: 1;
 }
 
+.o-button {
+  font-size: 1.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #edf3f4;
+  border-radius: 17px;
+  background-color: #f29100;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-right: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #f29100;
+}
+
+@media screen and (max-width: 500px) {
+  .o-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
+}
+
+.o-button--offerte {
+  max-width: 16rem;
+  min-width: 16rem;
+}
+
+.o-button--noodnummer {
+  background-color: #e84e1b;
+  border: 1px solid #e84e1b;
+  min-width: 16rem;
+  max-width: 16rem;
+}
+
+.o-button--noodnummer:hover {
+  border: 1px solid #e84e1b;
+  background-color: white;
+  color: #023c48;
+}
+
+.o-button--noodnummer:hover span {
+  display: none;
+}
+
+.o-button--noodnummer:hover:before {
+  content: "+32 56 56 56 16";
+}
+
+.o-button-filter {
+  background-color: #809da3;
+  border: 1px solid #809da3;
+}
+
+.o-button-filter:hover {
+  background-color: #023c48;
+  border: 1px solid #023c48;
+}
+
+.o-button-filter-active {
+  background-color: #f29100;
+}
+
+.o-button-nav-active {
+  background-color: #e84e1b;
+  border: 1px solid #e84e1b;
+}
+
+.o-button-nav:hover {
+  background-color: white;
+  border: 1px solid #f29100;
+  color: black;
+}
+
 /* navbar ******************************************************/
 .navbar {
   padding-top: 0;
@@ -312,75 +406,6 @@ i.material-icons:hover {
 
 .dropdown-trigger {
   border: none;
-  margin-right: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #f29100;
-}
-
-@media screen and (max-width: 500px) {
-  .o-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 0;
-  }
-}
-
-.o-button--offerte {
-  max-width: 16rem;
-  min-width: 16rem;
-}
-
-.o-button--noodnummer {
-  background-color: #e84e1b;
-  border: 1px solid #e84e1b;
-  min-width: 16rem;
-  max-width: 16rem;
-}
-
-.o-button--noodnummer:hover {
-  border: 1px solid #e84e1b;
-  background-color: white;
-  color: #023c48;
-}
-
-.o-button--noodnummer:hover span {
-  display: none;
-}
-
-.o-button--noodnummer:hover:before {
-  content: "+32 56 56 56 16";
-}
-
-.o-button-filter {
-  background-color: #809da3;
-  border: 1px solid #809da3;
-}
-
-.o-button-filter:hover {
-  background-color: #023c48;
-  border: 1px solid #023c48;
-}
-
-.o-button-filter-active {
-  background-color: #f29100;
-}
-
-.o-button-nav-active {
-  background-color: #e84e1b;
-  border: 1px solid #e84e1b;
-}
-
-.o-button-nav:hover {
-  background-color: white;
-  border: 1px solid #f29100;
-  color: black;
 }
 
 .c-footer {

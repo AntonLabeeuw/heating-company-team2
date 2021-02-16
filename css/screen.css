@@ -353,4 +353,8 @@ i.material-icons:hover {
   width: 0;
   color: #edf3f4;
 }
+
+.dropdown-trigger {
+  border: none;
+}
 /*# sourceMappingURL=screen.css.map */

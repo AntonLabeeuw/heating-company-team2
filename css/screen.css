@@ -845,6 +845,21 @@ input[type="checkbox"] {
   }
 }
 
+.c-policy {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f29100;
+}
+
+.c-policy-bold {
+  color: #023c48;
+  font-weight: bold;
+}
+
+.c-policy:hover {
+  color: #023c48;
+}
+
 .c-login-titel {
   text-align: center;
 }

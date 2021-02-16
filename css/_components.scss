@@ -246,3 +246,15 @@
     }
   }
 }
+
+.c-policy {
+  transition: 0.3s;
+  color: $color-orange;
+  &-bold {
+    color: $color-blue;
+    font-weight: bold;
+  }
+  &:hover {
+    color: $color-blue;
+  }
+}

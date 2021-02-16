@@ -1,8 +1,7 @@
-.c-footer{
+.c-footer {
     border-top: $color-orange 3px solid;
-    background-color: $color-grey;
 
-    &__row{
+    &__row {
         display: flex;
         justify-content: space-between;
 
@@ -11,37 +10,36 @@
         }
     }
 
-    &__logo{
+    &__logo {
         padding-top: 2.8px;
         padding-bottom: 6.5px;
         text-align: center;
     }
 
-    &__logo-klein{
+    &__logo-klein {
         width: 5rem;
-        
-        @media (max-width: 576px){
+
+        @media (max-width: 576px) {
             display: none;
         }
     }
 
-    &__logo-groot{
+    &__logo-groot {
         width: 60%;
         padding-top: 16px;
         text-align: center;
-        
-        @media (min-width: 577px){
+
+        @media (min-width: 577px) {
             display: none;
         }
     }
 
-
-    &__copyright{
+    &__copyright {
         padding-top: 19px;
         text-align: center;
     }
 
-    &__icons{
+    &__icons {
         display: flex;
         padding-top: 16px;
 
@@ -50,15 +48,15 @@
         }
     }
 
-    &__icon{
+    &__icon {
         height: 30px;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             padding-right: 17px;
         }
     }
 }
 
-img{
+img {
     width: 100%;
 }

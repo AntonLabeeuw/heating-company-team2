@@ -1,0 +1,69 @@
+.o-button {
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    font-size: 1.6rem;
+    transition: 0.5s;
+    color: $color-grey;
+    border-radius: $btn-border-radius;
+    background-color: $color-orange;
+    padding-left: $btn-padding-L-R;
+    padding-right: $btn-padding-L-R;
+    padding-top: $btn-padding-T-B;
+    padding-bottom: $btn-padding-T-B;
+    margin-top: $btn-margin-T;
+    margin-bottom: $btn-margin-B;
+    margin-right: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid $color-orange;
+    // verschillende versies
+    &--offerte {
+        max-width: 16rem;
+        min-width: 16rem;
+    }
+    &--noodnummer {
+        background-color: $color-red;
+        border: 1px solid $color-red;
+        min-width: 16rem;
+        max-width: 16rem;
+        &:hover {
+            border: 1px solid $color-red;
+            background-color: white;
+            color: $color-blue;
+
+            & span {
+                display: none;
+            }
+            &:before {
+                content: "+32 56 56 56 16";
+            }
+        }
+    }
+    &-filter {
+        background-color: $color-grey--dark;
+        border: 1px solid $color-grey--dark;
+        &:hover {
+            background-color: $color-blue;
+            border: 1px solid $color-blue;
+        }
+        &-active {
+            background-color: $color-orange;
+        }
+    }
+    &-nav {
+        // margin-left: 2.5rem;
+        &-active {
+            background-color: $color-red;
+            border: 1px solid $color-red;
+        }
+        &:hover {
+            background-color: white;
+            border: 1px solid $color-orange;
+            color: black;
+        }
+    }
+}

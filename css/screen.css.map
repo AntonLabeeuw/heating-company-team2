@@ -9,7 +9,9 @@
         "_components.nav.scss",
         "_components.footer.scss",
         "_components.form.scss",
-        "_components.scss"
+        "_components.scss",
+        "_component.jouwprofiel.scss"
+
     ],
     "names": [],
     "file": "screen.css"

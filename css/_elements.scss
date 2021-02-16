@@ -46,3 +46,10 @@ p {
     text-decoration: none;
     display: inline-block;
 }
+a {
+    color: $color-orange;
+
+    &:hover {
+        color: $color-blue;
+    }
+}

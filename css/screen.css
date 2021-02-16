@@ -52,6 +52,14 @@ p {
   display: inline-block;
 }
 
+a {
+  color: #f29100;
+}
+
+a:hover {
+  color: #023c48;
+}
+
 /* navbar ******************************************************/
 .navbar {
   padding-top: 0;

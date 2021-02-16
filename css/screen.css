@@ -612,6 +612,7 @@ input[type="checkbox"] {
   height: 8.5rem;
   background-color: #023c48;
   margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -689,6 +690,7 @@ input[type="checkbox"] {
   padding-top: 5.5rem;
   padding-bottom: 5rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .c-uspbanner__background {

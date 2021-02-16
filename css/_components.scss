@@ -81,7 +81,7 @@
 }
 
 /* USP banner ***************************/
-.c-uspBanner {
+.c-uspbanner {
   background-color: $color-blue;
   padding: 1rem;
   padding-top: 5.5rem;
@@ -142,35 +142,36 @@
   }
 }
 
-.btn {
-  font-size: 1.6rem;
-  font-family: $font-family;
-  color: $color-grey;
-  text-transform: none;
-  border-radius: 1.7rem;
-  outline: none;
-  margin-right: 2rem;
-  // padding: 0.8rem 2rem;
-  box-shadow: none;
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  &__active {
-    background-color: $color-orange;
-    &:hover {
-      color: $color-grey;
-      background-color: $color-orange;
-    }
-  }
-  &__notactive {
-    background-color: #809da3;
-    &:hover {
-      color: $color-grey;
-      background-color: $color-orange;
-    }
-  }
-}
+// deze code mag weg
+// .btn {
+//   font-size: 1.6rem;
+//   font-family: $font-family;
+//   color: $color-grey;
+//   text-transform: none;
+//   border-radius: 1.7rem;
+//   outline: none;
+//   margin-right: 2rem;
+//   // padding: 0.8rem 2rem;
+//   box-shadow: none;
+//   &:focus {
+//     outline: none;
+//     box-shadow: none;
+//   }
+//   &__active {
+//     background-color: $color-orange;
+//     &:hover {
+//       color: $color-grey;
+//       background-color: $color-orange;
+//     }
+//   }
+//   &__notactive {
+//     background-color: #809da3;
+//     &:hover {
+//       color: $color-grey;
+//       background-color: $color-orange;
+//     }
+//   }
+// }
 
 .c-realisaties {
   margin-top: 4.8rem;

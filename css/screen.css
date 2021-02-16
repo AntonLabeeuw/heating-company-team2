@@ -711,4 +711,12 @@ input[type="checkbox"] {
 .c-login-titel {
   text-align: center;
 }
+
+.c-registeerlink-opmaak {
+  color: #e84e1b;
+}
+
+.c-registeerlink-opmaak:hover {
+  color: #f29100;
+}
 /*# sourceMappingURL=screen.css.map */

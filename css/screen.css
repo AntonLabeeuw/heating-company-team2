@@ -576,7 +576,6 @@ img {
   border-color: #023c48;
   border-radius: 5px;
   color: #023c48;
-  padding-left: 3rem;
 }
 
 textarea.form-control {
@@ -584,7 +583,6 @@ textarea.form-control {
   border-radius: 5px;
   height: 166px;
   font-size: 1.6rem;
-  padding-left: 3rem;
 }
 
 input[type="checkbox"] {
@@ -708,5 +706,17 @@ input[type="checkbox"] {
 
 .c-contactgegevens {
   margin-bottom: -3.5px;
+}
+
+.c-login-titel {
+  text-align: center;
+}
+
+.c-registeerlink-opmaak {
+  color: #e84e1b;
+}
+
+.c-registeerlink-opmaak:hover {
+  color: #f29100;
 }
 /*# sourceMappingURL=screen.css.map */

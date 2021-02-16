@@ -612,6 +612,7 @@ input[type="checkbox"] {
   height: 8.5rem;
   background-color: #023c48;
   margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -683,25 +684,26 @@ input[type="checkbox"] {
 }
 
 /* USP banner ***************************/
-.c-uspBanner {
+.c-uspbanner {
   background-color: #023c48;
   padding: 1rem;
   padding-top: 5.5rem;
   padding-bottom: 5rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.c-uspBanner__background {
+.c-uspbanner__background {
   background-color: #023c48;
 }
 
-.c-uspBanner__text {
+.c-uspbanner__text {
   font-size: 1.6rem;
   color: #edf3f4;
   margin-top: 2.8rem;
 }
 
-.c-uspBanner__title {
+.c-uspbanner__title {
   color: #f29100;
   font-weight: 700;
   margin: 0;
@@ -709,7 +711,7 @@ input[type="checkbox"] {
   font-size: 2rem;
 }
 
-.c-uspBanner__center {
+.c-uspbanner__center {
   margin: 0 auto;
   text-align: center;
 }
@@ -750,42 +752,6 @@ input[type="checkbox"] {
   padding-left: 2.09rem;
   padding-right: 2.09rem;
   margin-bottom: 1.22rem;
-}
-
-.btn {
-  font-size: 1.6rem;
-  font-family: "Roboto", "sans-serif";
-  color: #edf3f4;
-  text-transform: none;
-  border-radius: 1.7rem;
-  outline: none;
-  margin-right: 2rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn__active {
-  background-color: #f29100;
-}
-
-.btn__active:hover {
-  color: #edf3f4;
-  background-color: #f29100;
-}
-
-.btn__notactive {
-  background-color: #809da3;
-}
-
-.btn__notactive:hover {
-  color: #edf3f4;
-  background-color: #f29100;
 }
 
 .c-realisaties {

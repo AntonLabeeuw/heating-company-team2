@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <link rel="stylesheet" href="css/materialize.min.css">
-
+        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
@@ -20,19 +20,16 @@
 <body>
 
     <body>
-        <!-- login form -->
+        <!-- registeer form -->
         <main>
             <div class="container">
-                <a class="o-button o-button-nav-active" href="">Onderhoud</a>
-                <a class="o-button o-button-nav" href="">Installatie</a>
-                <a class="o-button o-button-nav" href="">Mijn profiel</a>
-                <h1 class="c-login-titel">Jouw profiel</h1>
+                <h1>Registreer</h1>
             </div>
             <section class="c-profielform">
                 <div class="container">
                     <form class="o-form">
                       <div class="row">
-                        <div class="col-6 offset-3 form-group c-form__group">
+                        <div class="col-6 offset-3 form-group c-form__group input-field">
                             <input type="text" name="naam" id="naam" class="form-control form-control-lg c-form__input" placeholder="Naam" minlength="2" required/>
                             <label class="c-form__label" for="naam">
                                 Naam
@@ -68,28 +65,28 @@
                             </label>
                         </div>
 
-                        <div class="col-4 offset-3 form-group c-form__group">
+                        <div class="col s6 m6 l6 xl4 offset-3 form-group c-form__group">
                             <input type="text" name="straat" id="straat" class="form-control form-control-lg c-form__input" placeholder="straat" minlength="2" required/>
                             <label class="c-form__label" for="straat">
                                 Straat
                             </label>
                         </div>
 
-                        <div class="col-1 form-group c-form__group">
+                        <div class="col s3 m3 l1 xl1 form-group c-form__group">
                             <input type="number" name="nummer" id="nummer" class="form-control form-control-lg c-form__input" placeholder="Nr" minlength="2" required/>
                             <label class="c-form__label" for="nummer">
                                 Nr
                             </label>
                         </div>
 
-                        <div class="col-1 form-group c-form__group">
-                            <input type="number" name="bus" id="bus" class="form-control form-control-lg c-form__input" placeholder="bus" minlength="2" required/>
+                        <div class="col s3 m3 l3 xl1 form-group c-form__group">
+                            <input type="text" name="bus" id="bus" class="form-control form-control-lg c-form__input" placeholder="bus" minlength="2" required/>
                             <label class="c-form__label" for="bus">
                                 Bus
                             </label>
                         </div>
 
-                        <div class="col-2 offset-3 form-group c-form__group">
+                        <div class="col l12 offset-3 form-group c-form__group">
                             <input type="number" name="postcode" id="postcode" class="form-control form-control-lg c-form__input" placeholder="Postcode" minlength="2" maxlength="4" min="0001" max="9999"  required/>
                             <label class="c-form__label" for="Postcode">
                                 Postcode
@@ -103,14 +100,39 @@
                             </label>
                         </div>
 
-                        <a type="submit" class="o-button col-2 offset-5">Verrander</a>
+                        <div class="col-6 offset-3 form-group c-form__group">
+                            <input type="text" name="gebruikersnaam" id="gebruikersnaam" class="form-control form-control-lg c-form__input" placeholder="Gebruikersnaam" minlength="2" required/>
+                            <label class="c-form__label" for="gebruikersnaam">
+                                Gebruikersnaam
+                            </label>
+                        </div>
+
+                        <div class="col-3 offset-3 form-group c-form__group">
+                            <input type="password" name="wachtwoord" id="wachtwoord" class="form-control form-control-lg c-form__input" placeholder="Wachtwoord" minlength="2"  required/>
+                            <label class="c-form__label" for="wachtwoord">
+                                Wachtwoord
+                            </label>
+                        </div>
+
+                        <div class="col-3 form-group c-form__group">
+                            <input type="password" name="wachtwoord" id="wachtwoord" class="form-control form-control-lg c-form__input" placeholder="Wachtwoord" minlength="2" required/>
+                            <label class="c-form__label" for="gemeente">
+                                Wachtwoord
+                            </label>
+                        </div>
+
+                        <div class="col-6 offset-3 c-form__group">
+                            <label class="c-form__label c-form__label--checkbox"><input type="checkbox" value="America" name="destination" class="">Ik ga akkoord met het <a class="c-privacy-link" href="policy.html">privacy statement</a></label>
+                        </div>
+
+                        <a type="submit" class="o-button col-2 offset-5">Registeer</a>
+                        </div>
+                        <div class="offset-4 col-6 c-login-text">
+                            <p>Nog geen account? <a class="c-registeerlink-opmaak" href="registeer.html"> Registreer </a>je dan nu!</p>
                         </div>
                     </form>
                 </div>
             </section>
-            <div class="container">
-                <a class="o-button effect effect-1" href="#">Neem contact op</a>
-            </div>
         </main>
         <!-- mijn footer -->
         <footer class="c-footer">

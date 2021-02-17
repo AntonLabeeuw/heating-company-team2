@@ -105,6 +105,42 @@ p {
   display: inline-block;
 }
 
+.btn {
+  font-size: 1.6rem;
+  font-family: "Roboto", "sans-serif";
+  color: #edf3f4;
+  text-transform: none;
+  border-radius: 1.7rem;
+  outline: none;
+  margin-right: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn__active {
+  background-color: #f29100;
+}
+
+.btn__active:hover {
+  color: #edf3f4;
+  background-color: #f29100;
+}
+
+.btn__notactive {
+  background-color: #809da3;
+}
+
+.btn__notactive:hover {
+  color: #edf3f4;
+  background-color: #f29100;
+}
+
 .o-button {
   font-size: 1.6rem;
   -webkit-transition: 0.5s;
@@ -187,6 +223,57 @@ p {
   background-color: white;
   border: 1px solid #f29100;
   color: black;
+}
+
+.o-button-effect {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 16px;
+  width: 205px;
+  overflow: hidden;
+}
+
+.o-button-effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.o-button-effect-1:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.o-button-effect-1:hover {
+  text-indent: -20px;
+}
+
+.o-button-effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
 }
 
 /* navbar ******************************************************/
@@ -308,6 +395,52 @@ i.material-icons:hover {
   border: none;
 }
 
+.c-topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c-topnav__logo {
+  width: 273px;
+  margin: 15px 45px 15px 0;
+}
+
+.c-topnav nav {
+  width: auto;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 1.4rem;
+}
+
+.c-topnav nav ul a {
+  color: #023c48;
+  font-size: 1.8rem;
+  padding: 0 3rem 0 0;
+}
+
+.c-topnav nav ul a:hover {
+  text-decoration: underline;
+  background: none;
+}
+
+.c-topnav__knoppen {
+  position: absolute;
+  right: 0;
+  margin-top: 27px;
+}
+
+.c-topnav__knop {
+  margin: 0;
+}
+
+.c-topnav__knop--offerte {
+  margin-right: 20px;
+}
+
+
 .c-footer {
   border-top: #f29100 3px solid;
 }
@@ -375,6 +508,78 @@ i.material-icons:hover {
 
 .c-footer__icon {
   height: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-footer__icons svg:hover #icon-map-1 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-map-2 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-phone-3 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-phone-8 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #circle_grid {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-1 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-5 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg #icon-map-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-map-2 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-3 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-8 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #circle_grid {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-5 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icon {
+  height: 30px;
+  margin-left: 3rem;
 }
 
 .c-footer__icon:not(:last-child) {
@@ -420,6 +625,8 @@ img {
   top: 0;
   left: 9px;
   line-height: 2.4;
+  line-height: 3.5;
+
   cursor: text;
   pointer-events: none;
 }
@@ -524,6 +731,7 @@ input[type="checkbox"] {
   height: 8.5rem;
   background-color: #023c48;
   margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -602,6 +810,41 @@ input[type="checkbox"] {
 .effect.effect-1:hover:before {
   opacity: 1;
   text-indent: 0px;
+.c-uspbanner {
+  background-color: #023c48;
+  padding: 1rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.c-uspbanner__background {
+  background-color: #023c48;
+}
+
+.c-uspbanner__text {
+  font-size: 1.6rem;
+  color: #edf3f4;
+  margin-top: 2.8rem;
+}
+
+.c-uspbanner__title {
+  color: #f29100;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.c-uspbanner__center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .c-uspbanner__icon {
+    margin-bottom: 1rem;
+  }
 }
 
 .c-contactgegevens {
@@ -615,6 +858,7 @@ input[type="checkbox"] {
   padding-top: 5.5rem;
   padding-bottom: 5rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .c-uspbanner__background {
@@ -661,6 +905,11 @@ input[type="checkbox"] {
 .c-reviews__card:last {
   margin-right: 0;
   border-right-width: 0;
+  margin-right: 1rem;
+}
+
+.c-reviews__card:last-child {
+  margin-right: 0;
 }
 
 .c-reviews__title {
@@ -783,6 +1032,32 @@ input[type="checkbox"] {
   }
 }
 
+
+.c-policy {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f29100;
+}
+
+.c-policy-bold {
+  color: #023c48;
+  font-weight: bold;
+}
+
+.c-policy:hover {
+  color: #023c48;
+}
+
+.c-team-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.c-team-img {
+  border-radius: 1rem;
+}
+
+
 .c-login-titel {
   text-align: center;
 }
@@ -794,4 +1069,10 @@ input[type="checkbox"] {
 .c-registeerlink-opmaak:hover {
   color: #f29100;
 }
+
+
+.c-offerte-h2 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=screen.css.map */

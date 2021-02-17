@@ -45,12 +45,65 @@
 
         @media (max-width: 576px) {
             padding-bottom: 19px;
+            justify-content: center;
+        }
+        svg:hover {
+            //map
+            #icon-map-1 {
+                fill: $color-blue;
+            }
+            #icon-map-2 {
+                fill: $color-red;
+            }
+            //phone
+            #icon-phone-3 {
+                fill: $color-blue;
+            }
+            #icon-phone-8 {
+                fill: $color-red;
+            }
+            #circle_grid {
+                fill: $color-red;
+            }
+            //mail
+            #icon-mail-1 {
+                fill: $color-red;
+            }
+            #icon-mail-5 {
+                fill: $color-blue;
+            }
+        }
+        svg {
+            //map
+            #icon-map-1 {
+                transition: fill 0.4s ease;
+            }
+            #icon-map-2 {
+                transition: fill 0.4s ease;
+            }
+            //phone
+            #icon-phone-3 {
+                transition: fill 0.4s ease;
+            }
+            #icon-phone-8 {
+                transition: fill 0.4s ease;
+            }
+            #circle_grid {
+                transition: fill 0.4s ease;
+            }
+            //mail
+            #icon-mail-1 {
+                transition: fill 0.4s ease;
+            }
+            #icon-mail-5 {
+                transition: fill 0.4s ease;
+            }
         }
     }
 
     &__icon {
         height: 30px;
-
+        margin-left: 3rem;
         &:not(:last-child) {
             padding-right: 17px;
         }

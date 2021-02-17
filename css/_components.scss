@@ -19,11 +19,11 @@
     }
   }
 }
-
 .c-banner-contact {
   height: 8.5rem;
   background-color: $color-blue;
   margin-bottom: 5rem;
+  margin-top: 2rem;
   @media screen and (max-width: 600px) {
     height: 16rem;
   }
@@ -45,47 +45,34 @@
     }
   }
 }
-// https://1stwebdesigner.com/20-amazing-pure-css-animated-buttons/
-// een beetje aanpassingen op gedaan
-.effect {
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  /* background-color: - add your own background-color */
-  font: {
-    family: "Roboto", sans-serif; /* put your font-family */
-    size: 16px;
+.c-uspbanner {
+  background-color: $color-blue;
+  padding: 1rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+  &__background {
+    background-color: $color-blue;
   }
-  width: 205px;
-  overflow: hidden;
-}
-.effect.effect-1 {
-  transition: all 0.2s linear 0s;
-
-  &:before {
-    content: "\f178";
-    font-family: FontAwesome;
-    font-size: 15px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    height: 100%;
-    width: 40px;
-    transition: all 0.2s linear 0s;
+  &__text {
+    font-size: 1.6rem;
+    color: #edf3f4;
+    margin-top: 2.8rem;
   }
-
-  &:hover {
-    text-indent: -20px;
-
-    &:before {
-      opacity: 1;
-      text-indent: 0px;
+  &__title {
+    color: $color-orange;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  &__center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__icon {
+    @media screen and (max-width: 500px) {
+      margin-bottom: 1rem;
     }
   }
 }
@@ -101,6 +88,7 @@
   padding-top: 5.5rem;
   padding-bottom: 5rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   &__background {
     background-color: $color-blue;
   }
@@ -164,35 +152,36 @@
   }
 }
 
-.btn {
-  font-size: 1.6rem;
-  font-family: $font-family;
-  color: $color-grey;
-  text-transform: none;
-  border-radius: 1.7rem;
-  outline: none;
-  margin-right: 2rem;
-  // padding: 0.8rem 2rem;
-  box-shadow: none;
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  &__active {
-    background-color: $color-orange;
-    &:hover {
-      color: $color-grey;
-      background-color: $color-orange;
-    }
-  }
-  &__notactive {
-    background-color: #809da3;
-    &:hover {
-      color: $color-grey;
-      background-color: $color-orange;
-    }
-  }
-}
+// deze code mag weg
+// .btn {
+//   font-size: 1.6rem;
+//   font-family: $font-family;
+//   color: $color-grey;
+//   text-transform: none;
+//   border-radius: 1.7rem;
+//   outline: none;
+//   margin-right: 2rem;
+//   // padding: 0.8rem 2rem;
+//   box-shadow: none;
+//   &:focus {
+//     outline: none;
+//     box-shadow: none;
+//   }
+//   &__active {
+//     background-color: $color-orange;
+//     &:hover {
+//       color: $color-grey;
+//       background-color: $color-orange;
+//     }
+//   }
+//   &__notactive {
+//     background-color: #809da3;
+//     &:hover {
+//       color: $color-grey;
+//       background-color: $color-orange;
+//     }
+//   }
+// }
 
 .c-realisaties {
   margin-top: 4.8rem;
@@ -227,5 +216,27 @@
     &__card {
       margin-top: 5rem;
     }
+  }
+}
+
+.c-policy {
+  transition: 0.3s;
+  color: $color-orange;
+  &-bold {
+    color: $color-blue;
+    font-weight: bold;
+  }
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.c-team {
+  &-title {
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  &-img {
+    border-radius: 1rem;
   }
 }

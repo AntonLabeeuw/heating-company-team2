@@ -5009,6 +5009,13 @@ textarea.materialize-textarea {
   transition: border 0.3s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, border 0.3s;
   transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 20px;
+  color: #f29100;
+  border: 1px solid #f29100;
 }
 input:not([type]):disabled,
 input:not([type])[readonly="readonly"],
@@ -5869,18 +5876,22 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::before {
 .switch label input[type="checkbox"][disabled]:checked + .lever:after {
   background-color: #949494;
 }
-/* select {
-} */
+select {
+  display: none;
+}
 select.browser-default {
   display: block;
+  color: #f29100;
+  border-color: #f29100;
+  font-size: 16px;
+  padding-left: 20px;
 }
 select {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 5px;
-  border: 1px solid #f2f2f2;
-  border-radius: 2px;
-  height: 3rem;
+  border-radius: 5px;
+  height: 5rem;
 }
 .select-label {
   position: absolute;

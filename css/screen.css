@@ -28,42 +28,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-h3 {
-  font-size: 2rem;
-  color: #f29100;
-  margin-top: 1rem;
-  font-size: 3.2rem;
-  color: #e84e1b;
-  font-weight: bold;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  font-size: 3.2rem;
-  color: #e84e1b;
-  font-weight: bold;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 500px) {
-  h3 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h3 {
-    font-size: 2rem;
-  }
-}
-
-h2 {
-  font-size: 2rem;
-  color: #f29100;
-  font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 1.6rem;
@@ -824,6 +788,15 @@ input[type="checkbox"] {
 
 .c-policy:hover {
   color: #023c48;
+}
+
+.c-team-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.c-team-img {
+  border-radius: 1rem;
 }
 
 .c-login-titel {

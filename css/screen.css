@@ -810,4 +810,8 @@ input[type="checkbox"] {
 .c-registeerlink-opmaak:hover {
   color: #f29100;
 }
+
+.c-offerte-h2 {
+  text-align: center;
+}
 /*# sourceMappingURL=screen.css.map */

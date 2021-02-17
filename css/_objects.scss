@@ -24,6 +24,11 @@
     &--offerte {
         max-width: 12rem;
         min-width: 12rem;
+
+        @media (max-width: 816px){
+            min-width: 16rem;
+            max-width: 16rem;
+          }
     }
     &--noodnummer {
         background-color: $color-red;

@@ -143,6 +143,13 @@ p {
   min-width: 12rem;
 }
 
+@media (max-width: 816px) {
+  .o-button--offerte {
+    min-width: 16rem;
+    max-width: 16rem;
+  }
+}
+
 .o-button--noodnummer {
   background-color: #e84e1b;
   border: 1px solid #e84e1b;
@@ -254,6 +261,13 @@ p {
 .nav-item__active {
   color: #edf3f4;
   background-color: #e84e1b;
+}
+
+@media (max-width: 401px) {
+  .navbar-background nav {
+    width: 111%;
+    overflow-x: hidden;
+  }
 }
 
 /* navbar materialize ********************************************/
@@ -368,6 +382,22 @@ i.material-icons:hover {
           justify-content: space-between;
 }
 
+@media (max-width: 816px) {
+  .c-topnav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 401px) {
+  .c-topnav {
+    width: 111%;
+    overflow-x: hidden;
+  }
+}
+
 .c-topnav__logo {
   width: 27.3rem;
   margin: 15px 0;
@@ -379,12 +409,25 @@ i.material-icons:hover {
   }
 }
 
+@media (max-width: 816px) {
+  .c-topnav__logo {
+    margin: 15px auto;
+    width: 38rem;
+  }
+}
+
 .c-topnav nav {
   width: auto;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   margin-top: 1.4rem;
+}
+
+@media (max-width: 816px) {
+  .c-topnav nav {
+    margin: 15px auto;
+  }
 }
 
 .c-topnav nav ul a {
@@ -400,6 +443,19 @@ i.material-icons:hover {
 .c-topnav__knoppen {
   margin-top: 27px;
   margin-left: 0;
+}
+
+@media (max-width: 816px) {
+  .c-topnav__knoppen {
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .c-topnav__knop {

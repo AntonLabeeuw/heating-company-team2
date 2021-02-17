@@ -243,3 +243,18 @@
     border-radius: 1rem;
   }
 }
+
+.c-list {
+  list-style: none;
+  margin-left: 5rem;
+  &-item {
+    padding: 0 0 0 20px;
+    list-style: none;
+    background-image: url("../icons/fire.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}

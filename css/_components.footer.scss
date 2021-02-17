@@ -46,12 +46,18 @@
         @media (max-width: 576px) {
             padding-bottom: 19px;
         }
+        &-map {
+            &--1 {
+                svg:hover {
+                    fill: red;
+                }
+            }
+        }
     }
 
     &__icon {
         height: 30px;
         margin-left: 3rem;
-
         &:not(:last-child) {
             padding-right: 17px;
         }
@@ -60,4 +66,8 @@
 
 img {
     width: 100%;
+}
+
+svg:hover Path#Path_59.c-locationicon {
+    fill: #e84e1b;
 }

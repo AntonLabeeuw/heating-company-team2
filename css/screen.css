@@ -424,6 +424,10 @@ i.material-icons:hover {
   }
 }
 
+.c-footer__icons-map--1 svg:hover {
+  fill: red;
+}
+
 .c-footer__icon {
   height: 30px;
   margin-left: 3rem;
@@ -435,6 +439,10 @@ i.material-icons:hover {
 
 img {
   width: 100%;
+}
+
+svg:hover Path#Path_59.c-locationicon {
+  fill: #e84e1b;
 }
 
 .C-form {

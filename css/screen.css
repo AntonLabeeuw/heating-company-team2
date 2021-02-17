@@ -466,11 +466,73 @@ i.material-icons:hover {
 @media (max-width: 576px) {
   .c-footer__icons {
     padding-bottom: 19px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.c-footer__icons-map--1 svg:hover {
-  fill: red;
+.c-footer__icons svg:hover #icon-map-1 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-map-2 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-phone-3 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-phone-8 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #circle_grid {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-1 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-5 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg #icon-map-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-map-2 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-3 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-8 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #circle_grid {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-5 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
 }
 
 .c-footer__icon {
@@ -484,10 +546,6 @@ i.material-icons:hover {
 
 img {
   width: 100%;
-}
-
-svg:hover Path#Path_59.c-locationicon {
-  fill: #e84e1b;
 }
 
 .C-form {

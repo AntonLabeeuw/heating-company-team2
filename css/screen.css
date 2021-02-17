@@ -528,7 +528,73 @@ i.material-icons:hover {
 @media (max-width: 576px) {
   .c-footer__icons {
     padding-bottom: 19px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+}
+
+.c-footer__icons svg:hover #icon-map-1 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-map-2 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-phone-3 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg:hover #icon-phone-8 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #circle_grid {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-1 {
+  fill: #e84e1b;
+}
+
+.c-footer__icons svg:hover #icon-mail-5 {
+  fill: #023c48;
+}
+
+.c-footer__icons svg #icon-map-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-map-2 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-3 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-phone-8 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #circle_grid {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-1 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+}
+
+.c-footer__icons svg #icon-mail-5 {
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
 }
 
 .c-footer__icon {
@@ -692,6 +758,12 @@ input[type="checkbox"] {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .c-banner-contact {
+    height: 20rem;
+  }
+}
+
 .c-banner-contact-text {
   color: #edf3f4;
   padding-top: 2rem;
@@ -787,15 +859,27 @@ input[type="checkbox"] {
   text-align: center;
 }
 
+.c-reviews {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c-reviews__card {
   background-color: #edf3f4;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
+          box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
+  height: 30rem;
+  max-width: 34rem;
   margin-right: 1rem;
 }
 
-.c-reviews__card:last-child {
+.c-reviews__card:last {
   margin-right: 0;
+  border-right-width: 0;
 }
 
 .c-reviews__title {
@@ -812,7 +896,7 @@ input[type="checkbox"] {
   padding-top: 2.2rem;
   padding-left: 1.8rem;
   padding-right: 0.06rem;
-  margin-top: 0;
+  margin-right: 1rem;
 }
 
 .c-reviews__stars {
@@ -841,6 +925,10 @@ input[type="checkbox"] {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
+.c-realisaties__img:hover .overlay {
+  height: 100%;
+}
+
 .c-realisaties__item {
   margin-bottom: 5rem;
 }
@@ -849,29 +937,6 @@ input[type="checkbox"] {
   margin-top: 6.3rem;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: black;
-  background: rgba(242, 145, 0, 0.5);
-  /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding: 116px;
-  width: 49.3rem;
-  height: 37rem;
-  border-radius: 1rem;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .c-uspBanner__icon {
@@ -906,6 +971,22 @@ input[type="checkbox"] {
   border-radius: 1rem;
 }
 
+.c-list {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+.c-list-item {
+  padding: 0 0 0 20px;
+  list-style: none;
+  background-image: url("../icons/fire.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: left;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
 .c-login-titel {
   text-align: center;
 }
@@ -916,9 +997,5 @@ input[type="checkbox"] {
 
 .c-registeerlink-opmaak:hover {
   color: #f29100;
-}
-
-.c-offerte-h2 {
-  text-align: center;
 }
 /*# sourceMappingURL=screen.css.map */

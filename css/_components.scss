@@ -258,3 +258,31 @@
     line-height: 3rem;
   }
 }
+
+.c-button-menu {
+  &-title {
+    margin-bottom: -0.5rem;
+    @media screen and (max-width: 600px) {
+      margin-top: 3rem;
+    }
+  }
+  &-text {
+    @media screen and (max-width: 1090px) {
+      min-height: 5rem;
+    }
+  }
+  &-item {
+    text-align: center;
+    & .o-button {
+      margin-top: -1rem;
+      margin-right: 0rem;
+      @media screen and (max-width: 600px) {
+        display: flex;
+        margin: 0 auto;
+        margin-top: -4rem;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

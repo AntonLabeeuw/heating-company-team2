@@ -795,6 +795,10 @@ input[type="checkbox"] {
   margin-bottom: 1rem;
 }
 
+.c-team-img {
+  border-radius: 1rem;
+}
+
 .c-login-titel {
   text-align: center;
 }

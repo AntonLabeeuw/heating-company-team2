@@ -22,8 +22,13 @@
     border: 1px solid $color-orange;
     // verschillende versies
     &--offerte {
-        max-width: 16rem;
-        min-width: 16rem;
+        max-width: 12rem;
+        min-width: 12rem;
+
+        @media (max-width: 816px){
+            min-width: 16rem;
+            max-width: 16rem;
+          }
     }
     &--noodnummer {
         background-color: $color-red;

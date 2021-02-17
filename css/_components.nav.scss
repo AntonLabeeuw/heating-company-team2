@@ -12,6 +12,17 @@
   }
 }
 
+.navbar-background{
+
+  & nav{
+
+    @media (max-width: 401px){
+      width: 111%;
+      overflow-x: hidden;
+    }
+  }
+}
+
 /* navbar materialize ********************************************/
 .nav-wrapper {
   background-color: $color-orange;
@@ -99,4 +110,74 @@ i.material-icons {
 }
 .dropdown-trigger {
   border: none;
+}
+
+.c-topnav{
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 816px){
+    flex-direction: column;
+  }
+
+    @media (max-width: 401px){
+      width: 111%;
+      overflow-x: hidden;
+    }
+
+  &__logo{
+    width: 27.3rem;
+    margin: 15px 0;
+
+    @media (max-width: 1104px){
+      width: 19.3rem;
+    }
+
+    @media (max-width: 816px){
+      margin: 15px auto;
+      width: 38rem;
+    }
+
+  }
+
+  & nav{
+    width: auto;
+    background: none;
+    box-shadow: none;
+    margin-top: 1.4rem;
+
+    @media (max-width: 816px){
+      margin: 15px auto;
+    }
+
+    & ul a{
+      color: $color-blue;
+      font-size: 1.8rem;
+
+      &:hover{
+        text-decoration: underline;
+        background: none;
+      }
+    }
+  }
+
+  &__knoppen{
+    margin-top: 27px;
+    margin-left: 0;
+
+    @media (max-width: 816px){
+      margin-top: 0;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__knop{
+    margin: 0;
+
+    &--offerte{
+      margin-right: 20px;
+    }
+  }
 }

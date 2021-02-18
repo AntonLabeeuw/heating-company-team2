@@ -116,47 +116,63 @@
 }
 
 .c-reviews {
-  justify-content: space-evenly;
+  position: relative;
   display: flex;
   &__card {
-<<<<<<< Updated upstream
     background-color: #edf3f4;
     box-shadow: 0 24px 38px 3px rgb(0, 0, 0 / 14%), 0 9px 46px 8px rgb(0, 0, 0 / 12%),
       0 11px 15px -7px rgb(0, 0, 0 / 20%);
-=======
     background-color: $color-grey;
->>>>>>> Stashed changes
     height: 30rem;
     max-width: 34rem;
     margin-right: 1rem;
+  justify-content: space-between;
 
-    &:last {
-      margin-right: 0;
-      border-right-width: 0;
+  &__review{
+    background-color: $color-grey;
+    // width: 32%;
+    // height: 270px;
+    padding: 26px 18px 12px 18px;
+    text-align: center;
+
+  }
+
+      
+  & .slick-slide{
+    height: 270px;
+    width: 32%;
+    
+    @media (max-width: 401px){
+      width: 100%;
+      // overflow-x: hidden;
+    }
+    margin-right: 8px;
+    margin-left: 8px;
+    // margin-right: 16px;
+  }
+
+  &__text{
+    color: $color-blue;
+    font-weight: bold;
+  }
+  
+  &__rating{
+    position: absolute;
+    bottom: 12px;
+    margin: 0 auto;
+    width: 25.5%;
+
+    @media (max-width: 999.5px){
+      width: 28%;
+    }
+
+    @media (max-width: 659.5px){
+      width: 32%;
     }
   }
-  &__title {
-    font-size: 1.6rem;
-    color: $color-blue;
-    text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3.2rem;
-  }
-  &__text {
-    font-weight: 700;
-    color: $color-blue;
-    padding-top: 2.2rem;
-    padding-left: 1.8rem;
-    padding-right: 0.06rem;
-    // margin-top: 0;
-    margin-right: 1rem;
-  }
-  &__stars {
-    text-align: center;
-    justify-content: center;
-    padding-left: 2.09rem;
-    padding-right: 2.09rem;
-    margin-bottom: 1.22rem;
+
+  &__quote{
+    font-size: 1.4rem;
   }
 }
 
@@ -218,7 +234,6 @@
   }
 }
 
-<<<<<<< Updated upstream
 .c-list {
   list-style: none;
   margin-left: 5rem;
@@ -258,7 +273,6 @@
         flex-direction: column;
         justify-content: center;
       }
-=======
 /* ketel soor component *********************************/
 
 .c-ketel-soort {
@@ -306,7 +320,10 @@
       // color: red;
       margin-right: 0;
       margin-left: 1.8rem;
->>>>>>> Stashed changes
     }
   }
+}
+
+.c-offerte-h2{
+  text-align: center;
 }

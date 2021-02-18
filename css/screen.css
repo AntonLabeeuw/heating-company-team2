@@ -105,6 +105,16 @@ p {
   background-color: #f29100;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url("../icons/arrow-orange.svg") white no-repeat 98.5% !important;
+  /* !important used for overriding all other customisations */
+  margin-right: 3rem;
+}
+
 .o-button {
   font-size: 1.6rem;
   -webkit-transition: 0.5s;
@@ -656,6 +666,8 @@ img {
 .c-form__input {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding-left: 2rem;
+  max-width: calc(100% - 1.8rem);
 }
 
 .c-form__input:focus {
@@ -663,6 +675,8 @@ img {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 1px solid #f29100;
+  padding-left: 2rem;
+  max-width: calc(100% - 1.8rem);
 }
 
 .c-form__input::-webkit-input-placeholder {
@@ -682,8 +696,8 @@ img {
 }
 
 .c-form__input ~ .c-form__label {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .c-form__input:not(:placeholder-shown) {
@@ -703,6 +717,10 @@ img {
   color: #023c48;
 }
 
+.form-control {
+  width: 101%;
+}
+
 textarea.form-control {
   border-color: #707070;
   border-radius: 5px;
@@ -712,6 +730,16 @@ textarea.form-control {
 
 input[type="checkbox"] {
   margin-right: 9px;
+}
+
+.input.valid:not([type]), input.valid:not([type]):focus, input.valid[type="text"]:not(.browser-default), input.valid[type="text"]:not(.browser-default):focus, input.valid[type="password"]:not(.browser-default), input.valid[type="password"]:not(.browser-default):focus, input.valid[type="email"]:not(.browser-default), input.valid[type="email"]:not(.browser-default):focus, input.valid[type="url"]:not(.browser-default), input.valid[type="url"]:not(.browser-default):focus, input.valid[type="time"]:not(.browser-default), input.valid[type="time"]:not(.browser-default):focus, input.valid[type="date"]:not(.browser-default), input.valid[type="date"]:not(.browser-default):focus, input.valid[type="datetime"]:not(.browser-default), input.valid[type="datetime"]:not(.browser-default):focus, input.valid[type="datetime-local"]:not(.browser-default), input.valid[type="datetime-local"]:not(.browser-default):focus, input.valid[type="tel"]:not(.browser-default), input.valid[type="tel"]:not(.browser-default):focus, input.valid[type="number"]:not(.browser-default), input.valid[type="number"]:not(.browser-default):focus, input.valid[type="search"]:not(.browser-default), input.valid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+  border-bottom: none;
+  -webkit-box-shadow: 0 1px 0 0 black;
+          box-shadow: 0 1px 0 0 black;
+}
+
+input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="text"]:not(.browser-default), input.invalid[type="text"]:not(.browser-default):focus, input.invalid[type="password"]:not(.browser-default), input.invalid[type="password"]:not(.browser-default):focus, input.invalid[type="email"]:not(.browser-default), input.invalid[type="email"]:not(.browser-default):focus, input.invalid[type="url"]:not(.browser-default), input.invalid[type="url"]:not(.browser-default):focus, input.invalid[type="time"]:not(.browser-default), input.invalid[type="time"]:not(.browser-default):focus, input.invalid[type="date"]:not(.browser-default), input.invalid[type="date"]:not(.browser-default):focus, input.invalid[type="datetime"]:not(.browser-default), input.invalid[type="datetime"]:not(.browser-default):focus, input.invalid[type="datetime-local"]:not(.browser-default), input.invalid[type="datetime-local"]:not(.browser-default):focus, input.invalid[type="tel"]:not(.browser-default), input.invalid[type="tel"]:not(.browser-default):focus, input.invalid[type="number"]:not(.browser-default), input.invalid[type="number"]:not(.browser-default):focus, input.invalid[type="search"]:not(.browser-default), input.invalid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.invalid, textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown, .select-wrapper.invalid > input.select-dropdown:focus {
+  border-bottom: hotpink;
 }
 
 .c-banner-klok {
@@ -861,56 +889,65 @@ input[type="checkbox"] {
 }
 
 .c-reviews {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.c-reviews__card {
+.c-reviews__review {
   background-color: #edf3f4;
-<<<<<<< Updated upstream
   -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
           box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-=======
->>>>>>> Stashed changes
   height: 30rem;
   max-width: 34rem;
   margin-right: 1rem;
-}
-
-.c-reviews__card:last {
-  margin-right: 0;
-  border-right-width: 0;
-}
-
-.c-reviews__title {
-  font-size: 1.6rem;
-  color: #023c48;
+  padding: 26px 18px 12px 18px;
   text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3.2rem;
+}
+
+.c-reviews .slick-slide {
+  height: 270px;
+  width: 32%;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+@media (max-width: 401px) {
+  .c-reviews .slick-slide {
+    width: 100%;
+  }
 }
 
 .c-reviews__text {
-  font-weight: 700;
   color: #023c48;
-  padding-top: 2.2rem;
-  padding-left: 1.8rem;
-  padding-right: 0.06rem;
-  margin-right: 1rem;
+  font-weight: bold;
 }
 
-.c-reviews__stars {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 2.09rem;
-  padding-right: 2.09rem;
-  margin-bottom: 1.22rem;
+.c-reviews__rating {
+  position: absolute;
+  bottom: 12px;
+  margin: 0 auto;
+  width: 25.5%;
+}
+
+@media (max-width: 999.5px) {
+  .c-reviews__rating {
+    width: 28%;
+  }
+}
+
+@media (max-width: 659.5px) {
+  .c-reviews__rating {
+    width: 32%;
+  }
+}
+
+.c-reviews__quote {
+  font-size: 1.4rem;
 }
 
 .c-realisaties {
@@ -975,7 +1012,6 @@ input[type="checkbox"] {
   border-radius: 1rem;
 }
 
-<<<<<<< Updated upstream
 .c-list {
   list-style: none;
   margin-left: 5rem;
@@ -1031,7 +1067,6 @@ input[type="checkbox"] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-=======
 /* ketel soor component *********************************/
 .c-ketel-soort__title {
   margin-top: 0;
@@ -1082,8 +1117,11 @@ input[type="checkbox"] {
   .c-ketel-soort:nth-of-type(even) .c-ketel-soort__info {
     margin-right: 0;
     margin-left: 1.8rem;
->>>>>>> Stashed changes
   }
+}
+
+.c-offerte-h2 {
+  text-align: center;
 }
 
 .c-login-titel {
@@ -1097,11 +1135,10 @@ input[type="checkbox"] {
 .c-registeerlink-opmaak:hover {
   color: #f29100;
 }
-<<<<<<< Updated upstream
-=======
+
 
 .c-offerte-h2 {
   text-align: center;
 }
->>>>>>> Stashed changes
+
 /*# sourceMappingURL=screen.css.map */

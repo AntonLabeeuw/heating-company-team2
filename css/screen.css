@@ -751,6 +751,23 @@ input:not([type]).invalid ~ .helper-text:after, input:not([type]):focus.invalid 
   font-size: 1.6rem;
 }
 
+.filled-in {
+  background-color: red;
+}
+
+.c-privacy-link {
+  color: #e84e1b;
+}
+
+[type="checkbox"] + span:not(.lever) {
+  font-size: 1.6rem;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #f29100;
+  background-color: #f29100;
+}
+
 .c-banner-klok {
   height: 22rem;
   background-color: #023c48;

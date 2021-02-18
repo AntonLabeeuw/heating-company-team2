@@ -175,3 +175,20 @@ textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
     color: $color-red;
     font-size: 1.6rem;
 }
+
+.filled-in{
+    background-color: red;
+}
+
+.c-privacy-link{
+    color: $color-red;
+}
+[type="checkbox"] + span:not(.lever){
+    font-size: 1.6rem;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+    border: 2px solid $color-orange;
+    background-color: $color-orange;
+}
+

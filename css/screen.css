@@ -666,6 +666,8 @@ img {
 .c-form__input {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding-left: 2rem;
+  max-width: calc(100% - 1.8rem);
 }
 
 .c-form__input:focus {
@@ -673,6 +675,8 @@ img {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 1px solid #f29100;
+  padding-left: 2rem;
+  max-width: calc(100% - 1.8rem);
 }
 
 .c-form__input::-webkit-input-placeholder {
@@ -692,8 +696,8 @@ img {
 }
 
 .c-form__input ~ .c-form__label {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .c-form__input:not(:placeholder-shown) {
@@ -703,6 +707,14 @@ img {
 .c-form__input:not(:placeholder-shown) ~ .c-form__label {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.form-control-lg {
+  height: 50px;
+  font-size: 1.6rem;
+  border-color: #023c48;
+  border-radius: 5px;
+  color: #023c48;
 }
 
 .form-control {
@@ -718,6 +730,16 @@ textarea.form-control {
 
 input[type="checkbox"] {
   margin-right: 9px;
+}
+
+.input.valid:not([type]), input.valid:not([type]):focus, input.valid[type="text"]:not(.browser-default), input.valid[type="text"]:not(.browser-default):focus, input.valid[type="password"]:not(.browser-default), input.valid[type="password"]:not(.browser-default):focus, input.valid[type="email"]:not(.browser-default), input.valid[type="email"]:not(.browser-default):focus, input.valid[type="url"]:not(.browser-default), input.valid[type="url"]:not(.browser-default):focus, input.valid[type="time"]:not(.browser-default), input.valid[type="time"]:not(.browser-default):focus, input.valid[type="date"]:not(.browser-default), input.valid[type="date"]:not(.browser-default):focus, input.valid[type="datetime"]:not(.browser-default), input.valid[type="datetime"]:not(.browser-default):focus, input.valid[type="datetime-local"]:not(.browser-default), input.valid[type="datetime-local"]:not(.browser-default):focus, input.valid[type="tel"]:not(.browser-default), input.valid[type="tel"]:not(.browser-default):focus, input.valid[type="number"]:not(.browser-default), input.valid[type="number"]:not(.browser-default):focus, input.valid[type="search"]:not(.browser-default), input.valid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+  border-bottom: none;
+  -webkit-box-shadow: 0 1px 0 0 black;
+          box-shadow: 0 1px 0 0 black;
+}
+
+input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="text"]:not(.browser-default), input.invalid[type="text"]:not(.browser-default):focus, input.invalid[type="password"]:not(.browser-default), input.invalid[type="password"]:not(.browser-default):focus, input.invalid[type="email"]:not(.browser-default), input.invalid[type="email"]:not(.browser-default):focus, input.invalid[type="url"]:not(.browser-default), input.invalid[type="url"]:not(.browser-default):focus, input.invalid[type="time"]:not(.browser-default), input.invalid[type="time"]:not(.browser-default):focus, input.invalid[type="date"]:not(.browser-default), input.invalid[type="date"]:not(.browser-default):focus, input.invalid[type="datetime"]:not(.browser-default), input.invalid[type="datetime"]:not(.browser-default):focus, input.invalid[type="datetime-local"]:not(.browser-default), input.invalid[type="datetime-local"]:not(.browser-default):focus, input.invalid[type="tel"]:not(.browser-default), input.invalid[type="tel"]:not(.browser-default):focus, input.invalid[type="number"]:not(.browser-default), input.invalid[type="number"]:not(.browser-default):focus, input.invalid[type="search"]:not(.browser-default), input.invalid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.invalid, textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown, .select-wrapper.invalid > input.select-dropdown:focus {
+  border-bottom: hotpink;
 }
 
 .c-banner-klok {

@@ -168,12 +168,13 @@
                   type="email"
                   name="email"
                   id="email"
-                  class="form-control  c-form__input"
+                  class="form-control  c-form__input validate"
                   placeholder="E-mail"
                   minlength="2"
                   required
                 />
                 <label class="c-form__label" for="email"> E-mail </label>
+                <span class="helper-text" data-error="Dit is geen geldig e-mailadres"></span>
               </div>
 
               <div class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group">
@@ -211,7 +212,7 @@
                 <label class="c-form__label" for="straat"> Straat </label>
               </div>
 
-              <div class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3 offset-xl3  form-group c-form__group">
+              <div class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3  form-group c-form__group">
                 <input
                   type="number"
                   name="nummer"
@@ -224,7 +225,7 @@
                 <label class="c-form__label" for="nummer"> Nr </label>
               </div>
 
-              <div class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group">
+              <div class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3 form-group c-form__group">
                 <input
                   type="text"
                   name="bus"
@@ -258,7 +259,7 @@
                   type="text"
                   name="gemeente"
                   id="gemeente"
-                  class="form-control form-control-bla c-form__input"
+                  class="form-control c-form__input"
                   placeholder="Gemeente"
                   minlength="2"
                   required
@@ -269,8 +270,16 @@
               <h2 class="c-offerte-h2">Heb je nog opmerkingen?</h2>
             <div class="row">
                 <div class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="">Textarea</label>
+                  <textarea                   
+                  type="text"
+                  name="opmerkingen"
+                  id="opmerkingen"
+                  class="materialize-textarea"
+                  placeholder="Opmerkingen?"
+                  minlength="2"
+                  required>
+                  </textarea>
+                  <label class="c-form__label" for="opmerkingen"> Opmerkingen </label>
                 </div>
             </div>
           </form>

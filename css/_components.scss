@@ -174,7 +174,6 @@
     }
   }
 }
-
 .c-realisaties {
   margin-top: 4.8rem;
   &__title {
@@ -276,7 +275,7 @@
   }
 }
 
-/* ketel soor component *********************************/
+/* ketel soort component *********************************/
 .c-ketel-soort {
   &__title {
     margin-top: 0;
@@ -323,6 +322,44 @@
       margin-right: 0;
       margin-left: 1.8rem;
     }
+  }
+}
+
+/* installatie component *********************************/
+.c-installatie {
+  margin-top: 3.9rem;
+  &__img {
+    border-radius: 1rem;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-left: 1.6rem;
+    font-weight: 700;
+    @media screen and (max-width: 360px) {
+      margin-left: 0rem;
+    }
+  }
+  &__text {
+    // margin-top: 0;
+    // margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 1.6rem;
+    @media screen and (max-width: 360px) {
+      margin-left: 0rem;
+    }
+  }
+  &__info {
+    font-size: 1.6rem;
+    margin-left: 1.6rem;
+  }
+  &.row .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 974px) {
+    margin-left: 0;
   }
 }
 

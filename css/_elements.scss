@@ -86,3 +86,12 @@ p {
         }
     }
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, so we put the fallback first */
+    background: url("../icons/arrow-orange.svg") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+    margin-right: 3rem;
+}

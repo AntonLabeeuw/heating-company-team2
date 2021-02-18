@@ -4961,7 +4961,7 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-font-smoothing: antialiased;
 }
 select:focus {
-  outline: 1px solid #c9f3ef;
+  outline: #f29100;
 }
 button:focus {
   outline: none;
@@ -5013,9 +5013,8 @@ textarea.materialize-textarea {
   font-size: 1.6rem;
   border-radius: 5px;
   width: 100%;
-  padding-left: 20px;
-  color: #f29100;
-  border: 1px solid #f29100;
+  color: black;
+  border: 1px solid black;
 }
 input:not([type]):disabled,
 input:not([type])[readonly="readonly"],
@@ -5881,8 +5880,8 @@ select {
 }
 select.browser-default {
   display: block;
-  color: #f29100;
-  border-color: #f29100;
+  color: black;
+  border-color: black;
   font-size: 16px;
   padding-left: 20px;
 }

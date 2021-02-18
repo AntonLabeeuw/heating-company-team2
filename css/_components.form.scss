@@ -60,12 +60,8 @@
     }
 }
 
-.form-control-lg{
-    height: 50px;
-    font-size: 1.6rem;
-    border-color: $color-blue;
-    border-radius: 5px;
-    color: $color-blue;
+.form-control{
+    width: 101%;
 }
 
 textarea.form-control{

@@ -893,23 +893,28 @@ input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c-reviews__card {
+  background-color: #edf3f4;
+  -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
+          box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
+  background-color: #edf3f4;
+  height: 30rem;
+  max-width: 34rem;
+  margin-right: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.c-reviews__review {
+.c-reviews__card__review {
   background-color: #edf3f4;
-  -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-          box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-  height: 30rem;
-  max-width: 34rem;
-  margin-right: 1rem;
   padding: 26px 18px 12px 18px;
   text-align: center;
 }
 
-.c-reviews .slick-slide {
+.c-reviews__card .slick-slide {
   height: 270px;
   width: 32%;
   margin-right: 8px;
@@ -917,17 +922,17 @@ input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="
 }
 
 @media (max-width: 401px) {
-  .c-reviews .slick-slide {
+  .c-reviews__card .slick-slide {
     width: 100%;
   }
 }
 
-.c-reviews__text {
+.c-reviews__card__text {
   color: #023c48;
   font-weight: bold;
 }
 
-.c-reviews__rating {
+.c-reviews__card__rating {
   position: absolute;
   bottom: 12px;
   margin: 0 auto;
@@ -935,18 +940,18 @@ input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="
 }
 
 @media (max-width: 999.5px) {
-  .c-reviews__rating {
+  .c-reviews__card__rating {
     width: 28%;
   }
 }
 
 @media (max-width: 659.5px) {
-  .c-reviews__rating {
+  .c-reviews__card__rating {
     width: 32%;
   }
 }
 
-.c-reviews__quote {
+.c-reviews__card__quote {
   font-size: 1.4rem;
 }
 
@@ -1067,6 +1072,9 @@ input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
 /* ketel soor component *********************************/
 .c-ketel-soort__title {
   margin-top: 0;
@@ -1135,10 +1143,4 @@ input.invalid:not([type]), input.invalid:not([type]):focus, input.invalid[type="
 .c-registeerlink-opmaak:hover {
   color: #f29100;
 }
-
-
-.c-offerte-h2 {
-  text-align: center;
-}
-
 /*# sourceMappingURL=screen.css.map */

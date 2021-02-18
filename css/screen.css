@@ -867,6 +867,9 @@ input[type="checkbox"] {
 
 .c-reviews {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -881,7 +884,14 @@ input[type="checkbox"] {
 .c-reviews .slick-slide {
   height: 270px;
   width: 32%;
-  margin-right: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+@media (max-width: 401px) {
+  .c-reviews .slick-slide {
+    width: 100%;
+  }
 }
 
 .c-reviews__text {
@@ -892,6 +902,20 @@ input[type="checkbox"] {
 .c-reviews__rating {
   position: absolute;
   bottom: 12px;
+  margin: 0 auto;
+  width: 25.5%;
+}
+
+@media (max-width: 999.5px) {
+  .c-reviews__rating {
+    width: 28%;
+  }
+}
+
+@media (max-width: 659.5px) {
+  .c-reviews__rating {
+    width: 32%;
+  }
 }
 
 .c-reviews__quote {

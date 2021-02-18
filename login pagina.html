@@ -1,22 +1,35 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <link rel="stylesheet" href="css/materialize.min.css">
+<html lang="nl">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-        <!--eigen css-->
-        <link rel="stylesheet" href="css/screen.css">
-
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>design system</title>
+    <!-- Compiled and minified CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e3d5c31b7b.js" crossorigin="anonymous"></script>
+    <!--Import AOS effect-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/effect.js"></script>
+    <!-- bewerkte mimified -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- eigen CSS -->
+    <link rel="stylesheet" href="css/screen.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!--Import AOS effect-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/effect.js"></script>
+</head>
 <body>
 
     <body>
@@ -29,21 +42,36 @@
                 <div class="container">
                     <form class="o-form">
                       <div class="row">
-                        <div class="col-6 offset-3 form-group c-form__group">
-                            <input type="text" name="naam" id="naam" class="form-control form-control-lg c-form__input" placeholder="Naam" minlength="2" required/>
-                            <label class="c-form__label" for="naam">
-                                Naam
-                            </label>
-                        </div>
+                        <div class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group">
+                            <input
+                              type="text"
+                              name="voornaam"
+                              id="voornaam"
+                              class="form-control c-form__input validate"
+                              placeholder="Voornaam"
+                              minlength="2"
+                              required
+                            />
+                            <label class="c-form__label" for="voornaam"> Voornaam </label>
+                            <span class="helper-text" data-error="Dit is geen geldig voornaam"></span>
+                          </div>
+            
+                          <div class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group">
+                            <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              class="form-control c-form__input validate"
+                              placeholder="password"
+                              minlength="2"
+                              required
+                            />
+                            <label class="c-form__label" for="naam"> Wachtwoord </label>
+                            <span class="helper-text" data-error="Dit is geen geldig password"></span>
 
-                        <div class="col-6 offset-3 form-group c-form__group">
-                            <input type="password" name="password" id="password" class="form-control form-control-lg c-form__input" placeholder="password" minlength="2" required/>
-                            <label class="c-form__label" for="password">
-                                Wachtwoord
-                            </label>
-                        </div>
-
-                        <a type="submit" class="o-button col-2 offset-5">Login</a>
+                          </div>
+                          
+                          <a type="submit" class="o-button col-2 offset-5">Login</a>
                         </div>
                         <div class="offset-4 col-6 c-login-text">
                             <p>Nog geen account? <a class="c-registeerlink-opmaak" href="registeer.html"> Registreer </a>je dan nu!</p>
@@ -57,19 +85,6 @@
         </footer>
 
     </body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

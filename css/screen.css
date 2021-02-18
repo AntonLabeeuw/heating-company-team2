@@ -893,53 +893,36 @@ input:not([type]).invalid ~ .helper-text:after, input:not([type]):focus.invalid 
 }
 
 .c-reviews {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.c-reviews__card {
+.c-reviews__review {
   background-color: #edf3f4;
-  -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-          box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-  height: 30rem;
-  max-width: 34rem;
-  margin-right: 1rem;
-}
-
-.c-reviews__card:last {
-  margin-right: 0;
-  border-right-width: 0;
-}
-
-.c-reviews__title {
-  font-size: 1.6rem;
-  color: #023c48;
+  padding: 26px 18px 12px 18px;
   text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3.2rem;
+}
+
+.c-reviews .slick-slide {
+  height: 270px;
+  width: 32%;
+  margin-right: 16px;
 }
 
 .c-reviews__text {
-  font-weight: 700;
   color: #023c48;
-  padding-top: 2.2rem;
-  padding-left: 1.8rem;
-  padding-right: 0.06rem;
-  margin-right: 1rem;
+  font-weight: bold;
 }
 
-.c-reviews__stars {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 2.09rem;
-  padding-right: 2.09rem;
-  margin-bottom: 1.22rem;
+.c-reviews__rating {
+  position: absolute;
+  bottom: 12px;
+}
+
+.c-reviews__quote {
+  font-size: 1.4rem;
 }
 
 .c-realisaties {

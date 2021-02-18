@@ -82,8 +82,7 @@
     <!-- mijn main -->
     <main class="container">
         <h1>Realisaties en referenties</h1>
-        <p>Bekijk hier enkele realisaties van installaties van verwarmingsketels en kom te weten wat klanten over ons
-            zeggen.</p>
+        <p>Bekijk hier enkele realisaties van installaties van verwarmingsketels en kom te weten wat klanten over ons zeggen.</p>
         
         <section class="c-reviews">
             <article class="c-reviews__review">
@@ -211,6 +210,7 @@
                 </div>
             </article>
         </section>
+
         <section>
             <div class="c-realisaties__btns">
                 <button type="button" class="btn btn__active">Alles</button>
@@ -276,7 +276,21 @@
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                draggable: false
+                draggable: false,
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 660,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>

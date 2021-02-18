@@ -116,7 +116,7 @@
 
 .c-reviews {
   position: relative;
-  // display: flex;
+  display: flex;
   justify-content: space-between;
 
   &__review{
@@ -132,10 +132,15 @@
   & .slick-slide{
     height: 270px;
     width: 32%;
-    margin-right: 16px;
+    
+    @media (max-width: 401px){
+      width: 100%;
+      // overflow-x: hidden;
+    }
+    margin-right: 8px;
+    margin-left: 8px;
+    // margin-right: 16px;
   }
-
-
 
   &__text{
     color: $color-blue;
@@ -145,6 +150,16 @@
   &__rating{
     position: absolute;
     bottom: 12px;
+    margin: 0 auto;
+    width: 25.5%;
+
+    @media (max-width: 999.5px){
+      width: 28%;
+    }
+
+    @media (max-width: 659.5px){
+      width: 32%;
+    }
   }
 
   &__quote{

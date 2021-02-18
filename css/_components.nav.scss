@@ -6,17 +6,16 @@
 .nav-item {
   font-size: 1.8rem;
   font-family: $font-family;
+  //geen idee wat dit doet
   &__active {
     color: $color-grey;
     background-color: $color-red;
   }
 }
 
-.navbar-background{
-
-  & nav{
-
-    @media (max-width: 401px){
+.navbar-background {
+  & nav {
+    @media (max-width: 401px) {
       width: 111%;
       overflow-x: hidden;
     }
@@ -25,7 +24,7 @@
 
 /* navbar materialize ********************************************/
 .nav-wrapper {
-  background-color: $color-orange;
+  background-color: white;
   box-shadow: none;
   display: flex;
   justify-content: space-evenly;
@@ -34,26 +33,36 @@
   box-shadow: none;
 }
 .nav {
+  &:active {
+    border: none;
+  }
   &__item {
     font-size: 1.8rem;
     font-family: $font-family;
-    color: $color-grey;
+    color: $color-blue;
+    min-width: 5rem;
+    padding: 0 4.5rem;
+    @media (max-width: 1200px) {
+      padding: 0 2rem;
+    }
 
     &:hover {
       text-decoration: none;
-      color: $color-grey;
-      background-color: $color-red;
+      color: $color-red;
+      background-color: white;
+      outline: none;
     }
   }
   &__active {
-    color: $color-grey;
-    background-color: $color-red;
+    color: $color-red;
+    font-weight: bold;
   }
 }
 
 .dropdown-content {
   max-width: 100%;
-  background-color: $color-orange;
+  //de lijntjes bij mobile view
+  background-color: $color-grey;
   &:focus {
     outline: none;
   }
@@ -62,8 +71,8 @@
 .dropdown-content li > a,
 .dropdown-content li > span {
   font-size: 1.8rem;
-  background-color: $color-orange;
-  color: $color-grey;
+  background-color: white;
+  color: $color-blue;
   display: block;
   line-height: 22px;
   // padding: 14px 16px;
@@ -72,11 +81,11 @@ a:hover {
   text-decoration: none;
 }
 .sidenav {
-  background-color: $color-orange;
+  background-color: $color-grey;
 }
 .sidenav li > a {
-  background-color: $color-orange;
-  color: $color-grey;
+  background-color: $color-grey;
+
   display: block;
   font-size: 1.6rem;
   font-weight: 400;
@@ -89,14 +98,15 @@ a:hover {
   }
   &:focus {
     outline: none;
+    border: none;
   }
 }
 
 i.material-icons {
-  color: $color-grey;
+  color: $color-blue;
   cursor: pointer;
   &:hover {
-    color: $color-grey;
+    color: $color-blue;
   }
 }
 .sidenav li > a > i.material-icons {
@@ -110,62 +120,62 @@ i.material-icons {
 }
 .dropdown-trigger {
   border: none;
+  outline: none;
 }
 
-.c-topnav{
+.c-topnav {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 816px){
+  @media (max-width: 816px) {
     flex-direction: column;
   }
 
-    @media (max-width: 401px){
-      width: 111%;
-      overflow-x: hidden;
-    }
+  @media (max-width: 401px) {
+    width: 111%;
+    overflow-x: hidden;
+  }
 
-  &__logo{
+  &__logo {
     width: 27.3rem;
     margin: 15px 0;
 
-    @media (max-width: 1104px){
+    @media (max-width: 1104px) {
       width: 19.3rem;
     }
 
-    @media (max-width: 816px){
+    @media (max-width: 816px) {
       margin: 15px auto;
       width: 38rem;
     }
-
   }
 
-  & nav{
+  & nav {
     width: auto;
     background: none;
     box-shadow: none;
     margin-top: 1.4rem;
 
-    @media (max-width: 816px){
+    @media (max-width: 816px) {
       margin: 15px auto;
     }
 
-    & ul a{
+    & ul a {
       color: $color-blue;
       font-size: 1.8rem;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
         background: none;
       }
     }
   }
 
-  &__knoppen{
+  &__knoppen {
     margin-top: 27px;
     margin-left: 0;
 
-    @media (max-width: 816px){
+    @media (max-width: 816px) {
       margin-top: 0;
       margin-bottom: 15px;
       display: flex;
@@ -173,10 +183,10 @@ i.material-icons {
     }
   }
 
-  &__knop{
+  &__knop {
     margin: 0;
 
-    &--offerte{
+    &--offerte {
       margin-right: 20px;
     }
   }

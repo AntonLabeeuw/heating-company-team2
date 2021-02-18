@@ -1084,7 +1084,7 @@ input:not([type]).invalid ~ .helper-text:after, input:not([type]):focus.invalid 
   }
 }
 
-/* ketel soor component *********************************/
+/* ketel soort component *********************************/
 .c-ketel-soort__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -1134,6 +1134,56 @@ input:not([type]).invalid ~ .helper-text:after, input:not([type]):focus.invalid 
   .c-ketel-soort:nth-of-type(even) .c-ketel-soort__info {
     margin-right: 0;
     margin-left: 1.8rem;
+  }
+}
+
+/* installatie component *********************************/
+.c-installatie {
+  margin-top: 3.9rem;
+}
+
+.c-installatie__img {
+  border-radius: 1rem;
+}
+
+.c-installatie__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  margin-left: 1.6rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 360px) {
+  .c-installatie__title {
+    margin-left: 0rem;
+  }
+}
+
+.c-installatie__text {
+  padding-left: 0;
+  margin-left: 1.6rem;
+}
+
+@media screen and (max-width: 360px) {
+  .c-installatie__text {
+    margin-left: 0rem;
+  }
+}
+
+.c-installatie__info {
+  font-size: 1.6rem;
+  margin-left: 1.6rem;
+}
+
+.c-installatie.row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 974px) {
+  .c-installatie {
+    margin-left: 0;
   }
 }
 

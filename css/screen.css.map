@@ -11,7 +11,8 @@
         "_components.form.scss",
         "_components.scss",
         "_component.jouwprofiel.scss",
-        "_component.login.scss"
+        "_component.login.scss",
+        "_copmonent.offerte.scss"
     ],
     "names": [],
     "file": "screen.css"

@@ -105,6 +105,16 @@ p {
   background-color: #f29100;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url("../icons/arrow-orange.svg") white no-repeat 98.5% !important;
+  /* !important used for overriding all other customisations */
+  margin-right: 3rem;
+}
+
 .o-button {
   font-size: 1.6rem;
   -webkit-transition: 0.5s;
@@ -695,12 +705,8 @@ img {
   line-height: 1.5;
 }
 
-.form-control-lg {
-  height: 50px;
-  font-size: 1.6rem;
-  border-color: #023c48;
-  border-radius: 5px;
-  color: #023c48;
+.form-control {
+  width: 101%;
 }
 
 textarea.form-control {
@@ -1010,6 +1016,10 @@ input[type="checkbox"] {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.c-offerte-h2 {
+  text-align: center;
 }
 
 .c-login-titel {

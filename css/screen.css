@@ -261,6 +261,11 @@ select {
   text-indent: 0px;
 }
 
+.o-button-submit:focus {
+  outline: none;
+  border: none;
+}
+
 /* navbar ******************************************************/
 .navbar {
   padding-top: 0;
@@ -743,14 +748,6 @@ img {
   line-height: 1.5;
 }
 
-.form-control-lg {
-  height: 50px;
-  font-size: 1.6rem;
-  border-color: #023c48;
-  border-radius: 5px;
-  color: #023c48;
-}
-
 .form-control {
   width: 101%;
 }
@@ -827,6 +824,7 @@ textarea.materialize-textarea.invalid:focus,
 .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
   border-bottom: #e84e1b;
+  color: #e84e1b;
 }
 
 input:not([type]).invalid ~ .helper-text:after,
@@ -860,10 +858,6 @@ textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
   font-size: 1.6rem;
 }
 
-.filled-in {
-  background-color: red;
-}
-
 .c-privacy-link {
   color: #e84e1b;
 }
@@ -875,6 +869,11 @@ textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
 [type="checkbox"].filled-in:checked + span:not(.lever):after {
   border: 2px solid #f29100;
   background-color: #f29100;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  color: #f29100;
+  padding-left: 2rem;
 }
 
 .c-banner-klok {

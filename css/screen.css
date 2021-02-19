@@ -277,13 +277,6 @@ select {
   background-color: #e84e1b;
 }
 
-@media (max-width: 401px) {
-  .navbar-background nav {
-    width: 111%;
-    overflow-x: hidden;
-  }
-}
-
 /* navbar materialize ********************************************/
 .nav-wrapper {
   background-color: white;
@@ -292,9 +285,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .z-depth-0 {
@@ -311,13 +304,6 @@ select {
   font-family: "Roboto", "sans-serif";
   color: #023c48;
   min-width: 5rem;
-  padding: 0 4.5rem;
-}
-
-@media (max-width: 1200px) {
-  .nav__item {
-    padding: 0 2rem;
-  }
 }
 
 .nav__item:hover {

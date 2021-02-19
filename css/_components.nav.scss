@@ -168,6 +168,9 @@ nav .sidenav-trigger {
       margin: 15px auto;
       width: 38rem;
     }
+    @media (max-width: 360px) {
+      margin: auto;
+    }
   }
 
   & nav {

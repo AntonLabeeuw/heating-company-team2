@@ -465,6 +465,12 @@ nav .sidenav-trigger:hover {
   }
 }
 
+@media (max-width: 360px) {
+  .c-topnav__logo {
+    margin: auto;
+  }
+}
+
 .c-topnav nav {
   width: auto;
   background: none;
@@ -1309,6 +1315,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 .c-installatie__img {
   border-radius: 1rem;
+  max-width: 100%;
 }
 
 .c-installatie__title {
@@ -1325,6 +1332,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .c-installatie__title {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
 .c-installatie__text {
   padding-left: 0;
   margin-left: 1.6rem;
@@ -1336,9 +1350,23 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .c-installatie__text {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
 .c-installatie__info {
   font-size: 1.6rem;
   margin-left: 1.6rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .c-installatie__info {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
 }
 
 .c-installatie.row .col {
@@ -1359,6 +1387,58 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .slick-dots li.slick-active button:before {
   color: #f29100;
   opacity: 1;
+}
+
+@media screen and (max-width: 360px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
+
+/* logo card ***************************/
+.c-logo__cards-item {
+  height: 50rem;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1225px) {
+  .c-logo__cards-item {
+    height: 54rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c-logo__cards-item {
+    margin-top: 2rem;
+    height: 50rem;
+  }
+}
+
+.c-logo__cards-img {
+  width: 23.9rem;
+  /* justify-content: center; */
+  padding-top: 2rem;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+  padding-bottom: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.c-logo__cards-title {
+  text-align: center;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+.c-logo__cards-text {
+  text-align: center;
+  padding-top: 4.8rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 2rem;
 }
 
 .c-login-titel {

@@ -365,6 +365,7 @@
   margin-top: 3.9rem;
   &__img {
     border-radius: 1rem;
+    max-width: 100%;
   }
   &__title {
     margin-top: 0;
@@ -375,6 +376,10 @@
     @media screen and (max-width: 360px) {
       margin-left: 0rem;
     }
+    @media screen and (max-width: 1199px) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
   }
   &__text {
     // margin-top: 0;
@@ -384,10 +389,18 @@
     @media screen and (max-width: 360px) {
       margin-left: 0rem;
     }
+    @media screen and (max-width: 1199px) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
   }
   &__info {
     font-size: 1.6rem;
     margin-left: 1.6rem;
+    @media screen and (max-width: 1199px) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
   }
   &.row .col {
     padding-left: 0;
@@ -406,4 +419,46 @@
 .slick-dots li.slick-active button:before {
   color: $color-orange;
   opacity: 1;
+}
+@media screen and (max-width: 360px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
+/* logo card ***************************/
+.c-logo__cards {
+  &-item {
+    height: 50rem;
+    @media screen and (min-width: 1201px) and (max-width: 1225px) {
+      height: 54rem;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 2rem;
+      height: 50rem;
+    }
+  }
+  &-img {
+    width: 23.9rem;
+    // display: flex;
+    /* justify-content: center; */
+    padding-top: 2rem;
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+    padding-bottom: 1.8rem;
+    display: flex;
+    margin: auto;
+  }
+  &-title {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 1rem;
+  }
+  &-text {
+    text-align: center;
+    padding-top: 4.8rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-bottom: 2rem;
+  }
 }

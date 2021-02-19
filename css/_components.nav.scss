@@ -13,21 +13,21 @@
   }
 }
 
-.navbar-background {
-  & nav {
-    @media (max-width: 401px) {
-      width: 111%;
-      overflow-x: hidden;
-    }
-  }
-}
+// .navbar-background {
+//   & nav {
+//     @media (max-width: 401px) {
+//       width: 111%;
+//       overflow-x: hidden;
+//     }
+//   }
+// }
 
 /* navbar materialize ********************************************/
 .nav-wrapper {
   background-color: white;
   box-shadow: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .z-depth-0 {
   box-shadow: none;
@@ -41,10 +41,10 @@
     font-family: $font-family;
     color: $color-blue;
     min-width: 5rem;
-    padding: 0 4.5rem;
-    @media (max-width: 1200px) {
-      padding: 0 2rem;
-    }
+    // padding: 0 4.5rem;
+    // @media (max-width: 1200px) {
+    //   padding: 0 2rem;
+    // }
 
     &:hover {
       text-decoration: none;

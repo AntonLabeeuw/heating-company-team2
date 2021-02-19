@@ -277,13 +277,6 @@ select {
   background-color: #e84e1b;
 }
 
-@media (max-width: 401px) {
-  .navbar-background nav {
-    width: 111%;
-    overflow-x: hidden;
-  }
-}
-
 /* navbar materialize ********************************************/
 .nav-wrapper {
   background-color: white;
@@ -292,9 +285,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .z-depth-0 {
@@ -311,13 +304,6 @@ select {
   font-family: "Roboto", "sans-serif";
   color: #023c48;
   min-width: 5rem;
-  padding: 0 4.5rem;
-}
-
-@media (max-width: 1200px) {
-  .nav__item {
-    padding: 0 2rem;
-  }
 }
 
 .nav__item:hover {
@@ -1127,13 +1113,53 @@ textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
   color: #023c48;
 }
 
-.c-team-title {
-  font-weight: 800;
+.c-team__collega.row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c-team__collega-naam {
+  font-weight: 400;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.c-team-img {
+.c-team__collega-functie {
+  color: #023c48;
+  font-weight: 700;
+}
+
+.c-team__collega-img {
   border-radius: 1rem;
+  width: 32.4rem;
+  height: 22rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 974px) {
+  .c-team__collega:nth-child(even) {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .c-team__collega:nth-of-type(even) .c-team__collega-functie {
+    color: #023c48;
+    font-weight: 700;
+  }
+  .c-team__collega:nth-of-type(even) .c-team__collega-img {
+    background-color: #023c48;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 32.4rem;
+    height: 22rem;
+    max-width: 100%;
+    float: right;
+  }
 }
 
 .c-list {

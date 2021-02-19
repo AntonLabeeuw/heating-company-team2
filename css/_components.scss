@@ -366,3 +366,9 @@
 .c-offerte-h2 {
   text-align: center;
 }
+
+//caroussel
+.slick-dots li.slick-active button:before {
+  color: $color-orange;
+  opacity: 1;
+}

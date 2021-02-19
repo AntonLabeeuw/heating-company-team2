@@ -1301,6 +1301,11 @@ textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
   text-align: center;
 }
 
+.slick-dots li.slick-active button:before {
+  color: #f29100;
+  opacity: 1;
+}
+
 .c-login-titel {
   text-align: center;
 }

@@ -114,4 +114,8 @@
             }
         }
     }
+    &-submit:focus{
+        outline: none;
+        border: none;
+    }
 }

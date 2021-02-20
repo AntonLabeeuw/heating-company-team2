@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>design system</title>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -13,6 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Import Google Icon Font-->
@@ -29,37 +35,26 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/effect.js"></script>
-
-    <link rel="stylesheet" href="css/materialize.min.css" />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
     <!-- eigen CSS -->
     <link rel="stylesheet" href="css/screen.css" />
 
-    <!--Import AOS effect-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/effect.js"></script>
     <!-- javascript onze -->
     <script type="text/javascript" src="js/navbar.js"></script>
-
-    <!--slick css-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="slick-master/slick/slick.css"
-    />
-    <!-- Add the new slick-theme.css if you want the default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="slick-master/slick/slick-theme.css"
-    />
   </head>
+
   <body>
     <header>
       <div class="c-topnav container">
         <img
           src="icons/logo-groot.svg"
-          class="c-topnav__logo"
+          class="c-topnav__logo col s12 m12"
           alt="The Heating Company logo"
         />
         <nav>
@@ -143,72 +138,258 @@
       </div>
     </header>
 
-    <!-- login form -->
+    <!-- registeer form -->
     <main>
-      <div class="container">
-        <h1>Login</h1>
-      </div>
-      <section class="c-profielform">
-        <div class="container">
-          <form class="o-form">
-            <div class="row">
-              <div
-                class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
-              >
-                <input
-                  type="text"
-                  name="voornaam"
-                  id="voornaam"
-                  class="form-control c-form__input validate"
-                  placeholder="Voornaam"
-                  minlength="2"
-                  required
-                />
-                <label class="c-form__label" for="voornaam"> Voornaam </label>
-                <span
-                  class="helper-text"
-                  data-error="Dit is geen geldig voornaam"
-                ></span>
-              </div>
-
-              <div
-                class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
-              >
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  class="form-control c-form__input validate"
-                  placeholder="password"
-                  minlength="2"
-                  required
-                />
-                <label class="c-form__label" for="naam"> Wachtwoord </label>
-                <span
-                  class="helper-text"
-                  data-error="Dit is geen geldig password"
-                ></span>
-              </div>
-              <div class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3">
-                <p>
-                  Nog geen account?
-                  <a class="c-registeerlink-opmaak" href="registeer.html">
-                    Registreer </a
-                  >je dan nu!
-                </p>
-              </div>
-              <div
-              class="col s6 m3 l3 xl2 offset-s2 offset-m4 offset-l4 offset-xl5 form-group c-form__group"
-              >
-              <input class="o-button o-button-submit"  type="submit" value="Login"></input>
-              </div>
+            <div class="container">
+              <h1>Registreer</h1>
             </div>
-          </form>
-        </div>
-      </section>
+            <section class="c-profielform">
+              <div class="container">
+                <form class="o-form">
+                  <div class="row">
+                    <div
+                      class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="naam"
+                        id="naam"
+                        class="form-control c-form__input validate"
+                        placeholder="Naam"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> Naam </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig naam"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="voornaam"
+                        id="voornaam"
+                        class="form-control c-form__input validate"
+                        placeholder="Voornaam"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="voornaam"> Voornaam </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig voornaam"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control c-form__input validate"
+                        placeholder="E-mail"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="email"> E-mail </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig e-mailadres"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl4 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="straat"
+                        id="straat"
+                        class="form-control c-form__input validate"
+                        placeholder="straat"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="straat"> Straat </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig straat naam"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3 form-group c-form__group"
+                    >
+                      <input
+                        type="number"
+                        name="nummer"
+                        id="nummer"
+                        class="form-control c-form__input validate"
+                        data-length="4"
+                        placeholder="Nr"
+                        minlength="1"
+                        maxlength="4"
+                        min="1"
+                        max="1000"
+                        required
+                      />
+                      <label class="c-form__label" for="nummer"> Nr </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig nummer"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl1 offset-s0 offset-m0 offset-l3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="bus"
+                        id="bus"
+                        class="form-control c-form__input validate"
+                        placeholder="bus"
+                        minlength="2"
+                        maxlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="bus"> Bus </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig bus"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl2 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="number"
+                        name="postcode"
+                        id="postcode"
+                        class="form-control c-form__input validate"
+                        placeholder="Postcode"
+                        data-length="4"
+                        minlength="4"
+                        maxlength="4"
+                        min="1000"
+                        max="9999"
+                        required
+                      />
+                      <label class="c-form__label" for="Postcode"> Postcode </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig postcode"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl4 offset-s0 offset-m0 offset-l3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="gemeente"
+                        id="gemeente"
+                        class="form-control c-form__input"
+                        placeholder="Gemeente"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="gemeente"> Gemeente </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldige gemeente"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="text"
+                        name="gebruikersnaam"
+                        id="gebruikersnaam"
+                        class="form-control c-form__input validate"
+                        placeholder="Gebruikersnaam"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="gebruikersnaam">
+                        Gebruikersnaam
+                      </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig gebruikersnaam"
+                      ></span>
+                    </div>
+      
+                    <div
+                      class="col s12 m12 l6 xl3 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control c-form__input validate"
+                        placeholder="password"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> Wachtwoord </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig password"
+                      ></span>
+                    </div>
+                    <div
+                      class="col s12 m12 l6 xl3 offset-s0 offset-m0 offset-l3 offset-xl0 form-group c-form__group"
+                    >
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control c-form__input validate"
+                        placeholder="password"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> Wachtwoord </label>
+                      <span
+                        class="helper-text"
+                        data-error="Dit is geen geldig password"
+                      ></span>
+                    </div>
+                    <div
+                      class="col s12 m12 l6 xl6 offset-s0 offset-m0 offset-l3 offset-xl3 form-group c-form__group"
+                    >
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span class="c-form-span"
+                          >Ik ga akkoord met het
+                          <a class="c-privacy-link" href="policy.html"
+                            >privacy statement</a
+                          >
+                        </span>
+                      </label>
+                    </div>
+                    <div
+                    class="col s6 m3 l3 xl3 offset-s2 offset-m4 offset-l4 offset-xl5 form-group c-form__group"
+                    >
+                    <input class="o-button o-button-submit"  type="submit" value="Registreer"></input>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
     </main>
 
-    <!-- footer -->
+    <!-- dit is de footer -->
     <footer class="c-footer">
       <div class="c-footer__row container">
         <div class="c-footer__logo">
@@ -259,9 +440,8 @@
                 d="M256,0V5.273a5.274,5.274,0,0,1,0,10.547V30a.862.862,0,0,0,.773-.432l8.207-13.624A10.551,10.551,0,0,0,256,0Z"
                 transform="translate(-245.538)"
                 fill="#e84e1b"
-              />
-            </svg>
-          </a>
+              /></svg>
+            </a>
           <!-- phone -->
           <a href="tel:+32 56 56 56 16"
             ><svg
@@ -376,6 +556,13 @@
             </svg>
           </a>
         </div>
+      </div>
+
+      <!-- onder de footer -->
+
+      <div class="container c-footer-bottom">
+        <a href="">Policy</a>
+        <a href="">Vacatures</a>
       </div>
     </footer>
   </body>

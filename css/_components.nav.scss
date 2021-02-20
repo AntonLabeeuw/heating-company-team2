@@ -147,13 +147,15 @@ nav .sidenav-trigger {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 816px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
+    background-color: pink;
   }
 
   @media (max-width: 401px) {
     width: 111%;
     overflow-x: hidden;
+    background-color: yellow;
   }
 
   &__logo {
@@ -197,6 +199,9 @@ nav .sidenav-trigger {
   &__knoppen {
     margin-top: 27px;
     margin-left: 0;
+    @media (max-width: 370px) {
+      margin-left: -4rem;
+    }
 
     @media (max-width: 816px) {
       margin-top: 0;

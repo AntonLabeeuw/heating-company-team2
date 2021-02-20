@@ -1159,6 +1159,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   font-weight: bold;
 }
 
+.c-policy-link {
+  color: #f29100;
+}
+
+.c-policy-link:hover {
+  color: #023c48;
+  text-decoration: underline;
+}
+
 .c-policy:hover {
   color: #023c48;
 }

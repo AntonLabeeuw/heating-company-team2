@@ -1534,6 +1534,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   height: 100%;
 }
 
+.c-plaatsen__link {
+  color: #f29100;
+}
+
+.c-plaatsen__link:hover {
+  color: #023c48;
+  text-decoration: underline;
+}
+
 .c-login-titel {
   text-align: center;
 }

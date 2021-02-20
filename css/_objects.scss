@@ -114,8 +114,14 @@
             }
         }
     }
-    &-submit:focus{
-        outline: none;
-        border: none;
+    &-submit{
+        width: 100%;
+
+        &:focus{
+            outline: none;
+        }
     }
+    
+
 }
+

@@ -1183,6 +1183,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   max-width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .c-team__collega-img {
+    max-width: 90%;
+    width: 32.4rem;
+    height: 22rem;
+    border-radius: 1rem;
+  }
+}
+
 @media screen and (min-width: 974px) {
   .c-team__collega:nth-child(even) {
     margin-right: 0;
@@ -1206,6 +1215,25 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     height: 22rem;
     max-width: 100%;
     float: right;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c-team__collega:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .c-team__collega:nth-of-type(even) .c-team__collega-img {
+    background-color: #023c48;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 32.4rem;
+    height: 22rem;
+    max-width: 100%;
+    float: left;
   }
 }
 

@@ -431,12 +431,13 @@ nav .sidenav-trigger:hover {
           justify-content: space-between;
 }
 
-@media (max-width: 816px) {
+@media (max-width: 1200px) {
   .c-topnav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-color: pink;
   }
 }
 
@@ -444,6 +445,7 @@ nav .sidenav-trigger:hover {
   .c-topnav {
     width: 111%;
     overflow-x: hidden;
+    background-color: yellow;
   }
 }
 
@@ -498,6 +500,12 @@ nav .sidenav-trigger:hover {
 .c-topnav__knoppen {
   margin-top: 27px;
   margin-left: 0;
+}
+
+@media (max-width: 370px) {
+  .c-topnav__knoppen {
+    margin-left: -4rem;
+  }
 }
 
 @media (max-width: 816px) {

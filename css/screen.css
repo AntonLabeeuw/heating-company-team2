@@ -1028,33 +1028,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   text-align: center;
 }
 
-.c-reviews {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c-reviews__card {
-  background-color: #edf3f4;
-  -webkit-box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-          box-shadow: 0 24px 38px 3px black, 0 9px 46px 8px black, 0 11px 15px -7px black;
-  background-color: #edf3f4;
-  height: 30rem;
-  max-width: 34rem;
-  margin-right: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.c-reviews__card__review {
+.c-reviews__review {
   background-color: #edf3f4;
   padding: 26px 18px 12px 18px;
   text-align: center;
 }
 
-.c-reviews__card .slick-slide {
+.c-reviews .slick-slide {
   height: 270px;
   width: 32%;
   margin-right: 8px;
@@ -1062,17 +1042,17 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 @media (max-width: 401px) {
-  .c-reviews__card .slick-slide {
+  .c-reviews .slick-slide {
     width: 100%;
   }
 }
 
-.c-reviews__card__text {
+.c-reviews__text {
   color: #023c48;
   font-weight: bold;
 }
 
-.c-reviews__card__rating {
+.c-reviews__rating {
   position: absolute;
   bottom: 12px;
   margin: 0 auto;
@@ -1080,18 +1060,18 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 @media (max-width: 999.5px) {
-  .c-reviews__card__rating {
+  .c-reviews__rating {
     width: 28%;
   }
 }
 
 @media (max-width: 659.5px) {
-  .c-reviews__card__rating {
+  .c-reviews__rating {
     width: 32%;
   }
 }
 
-.c-reviews__card__quote {
+.c-reviews__quote {
   font-size: 1.4rem;
 }
 

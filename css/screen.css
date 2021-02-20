@@ -1183,6 +1183,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   max-width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .c-team__collega-img {
+    max-width: 90%;
+    width: 32.4rem;
+    height: 22rem;
+    border-radius: 1rem;
+  }
+}
+
 @media screen and (min-width: 974px) {
   .c-team__collega:nth-child(even) {
     margin-right: 0;
@@ -1206,6 +1215,25 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     height: 22rem;
     max-width: 100%;
     float: right;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c-team__collega:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .c-team__collega:nth-of-type(even) .c-team__collega-img {
+    background-color: #023c48;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 32.4rem;
+    height: 22rem;
+    max-width: 100%;
+    float: left;
   }
 }
 
@@ -1451,6 +1479,47 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   padding-left: 1.8rem;
   padding-right: 1.8rem;
   padding-bottom: 2rem;
+}
+
+.c-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.c-overlay-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.c-overlay-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(242, 145, 0, 0.6);
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.c-overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.c-overlay:hover .overlay {
+  height: 100%;
 }
 
 .c-login-titel {

@@ -1,5 +1,18 @@
 .c-footer {
   border-top: $color-orange 3px solid;
+  &-bottom {
+    border-top: $color-orange 3px solid;
+    display: flex;
+    justify-content: center;
+    & a {
+      color: $color-blue;
+      font-size: 1.6rem;
+      padding: 2rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
   &__row {
     display: flex;
@@ -37,6 +50,9 @@
   &__copyright {
     padding-top: 19px;
     text-align: center;
+    @media (min-width: 670px) {
+      margin-left: 10.5rem;
+    }
   }
 
   &__icons {

@@ -116,22 +116,9 @@
 }
 
 .c-reviews {
-  position: relative;
-  display: flex;
-  &__card {
-    background-color: #edf3f4;
-    box-shadow: 0 24px 38px 3px rgb(0, 0, 0 / 14%),
-      0 9px 46px 8px rgb(0, 0, 0 / 12%), 0 11px 15px -7px rgb(0, 0, 0 / 20%);
-    background-color: $color-grey;
-    height: 30rem;
-    max-width: 34rem;
-    margin-right: 1rem;
-    justify-content: space-between;
 
     &__review {
       background-color: $color-grey;
-      // width: 32%;
-      // height: 270px;
       padding: 26px 18px 12px 18px;
       text-align: center;
     }
@@ -139,14 +126,13 @@
     & .slick-slide {
       height: 270px;
       width: 32%;
-
-      @media (max-width: 401px) {
-        width: 100%;
-        // overflow-x: hidden;
-      }
       margin-right: 8px;
       margin-left: 8px;
-      // margin-right: 16px;
+      
+      @media (max-width: 401px) {
+        width: 100%;
+      }
+
     }
 
     &__text {
@@ -172,7 +158,6 @@
     &__quote {
       font-size: 1.4rem;
     }
-  }
 }
 .c-realisaties {
   margin-top: 4.8rem;

@@ -200,6 +200,13 @@
     color: $color-blue;
     font-weight: bold;
   }
+  &-link{
+    color: $color-orange;
+    &:hover{
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
   &:hover {
     color: $color-blue;
   }

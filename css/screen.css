@@ -431,7 +431,7 @@ nav .sidenav-trigger:hover {
           justify-content: space-between;
 }
 
-@media (max-width: 816px) {
+@media (max-width: 1100px) {
   .c-topnav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -500,6 +500,12 @@ nav .sidenav-trigger:hover {
   margin-left: 0;
 }
 
+@media (max-width: 400px) {
+  .c-topnav__knoppen {
+    margin-left: -4rem;
+  }
+}
+
 @media (max-width: 816px) {
   .c-topnav__knoppen {
     margin-top: 0;
@@ -523,6 +529,26 @@ nav .sidenav-trigger:hover {
 
 .c-footer {
   border-top: #f29100 3px solid;
+}
+
+.c-footer-bottom {
+  border-top: #f29100 3px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-footer-bottom a {
+  color: #023c48;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.c-footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 .c-footer__row {
@@ -571,6 +597,12 @@ nav .sidenav-trigger:hover {
 .c-footer__copyright {
   padding-top: 19px;
   text-align: center;
+}
+
+@media (min-width: 670px) {
+  .c-footer__copyright {
+    margin-left: 10.5rem;
+  }
 }
 
 .c-footer__icons {

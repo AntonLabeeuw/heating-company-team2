@@ -523,4 +523,8 @@
       text-decoration: underline;
     }
   }
+
+  &__img{
+    border-radius: $img-border-radius;
+  }
 }

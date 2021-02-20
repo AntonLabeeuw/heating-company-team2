@@ -1543,6 +1543,10 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   text-decoration: underline;
 }
 
+.c-plaatsen__img {
+  border-radius: 10px;
+}
+
 .c-login-titel {
   text-align: center;
 }

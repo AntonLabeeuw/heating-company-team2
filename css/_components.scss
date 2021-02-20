@@ -512,3 +512,15 @@
     height: 100%;
   }
 }
+
+.c-plaatsen{
+
+  &__link{
+    color: $color-orange;
+
+    &:hover{
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+}

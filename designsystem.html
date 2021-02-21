@@ -21,13 +21,27 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/effect.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js">
+    </script>
     <!-- eigen CSS -->
     <link rel="stylesheet" href="css/screen.css" />
-
     <!-- javascript onze -->
     <script type="text/javascript" src="js/navbar.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -48,41 +62,64 @@
             </div>
 
         </div>
-        <div class="navbar-background">
-            <nav class="container z-depth-0">
-                <div class="nav-wrapper z-depth-0">
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large col s6"><i
-                            class="material-icons">menu</i></a>
-                    <!-- Dropdown Structure -->
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a class="nav__item" href="#!">Woning</a></li>
-                        <li><a class="nav__item" href="#!">Residenties</a></li>
+        <nav class="z-depth-0">
+            <div class="nav-wrapper bg-color">
+                <div class="container">
+                    <!-- <a href="#" class="brand-logo">LOGO</a> -->
+                    <!-- mobile menu trigger -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse">
+                        <i class="material-icons nav__hamburger">menu</i>
+                    </a>
+                    <!-- desktop menu content -->
+                    <ul class="left hide-on-med-and-down">
+                        <!-- desktop menu dropdown trigger -->
+                        <li><a class="dropdown-button nav__item" href="#!" data-activates="dropdown1">
+                                Verwarmingsketel
+                                plaatsen
+                                <i class="material-icons right">
+                                    arrow_drop_down
+                                </i>
+                            </a></li>
+                        <li><a class="nav__item nav__item-active" href="#">Verwarmingsoplossingen</a></li>
+                        <!-- desktop menu dropdown content -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a class="dropdown-content__item" href="#">Woning</a></li>
+                            <li><a class="dropdown-content__item" href="#">Residenties</a></li>
+                        </ul>
+                        <li><a class="nav__item" href="#">Onderhoud</a></li>
+                        <li><a class="nav__item" href="#">Realisaties</a></li>
+                        <li><a class="nav__item" href="#">Contact</a></li>
                     </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="dropdown-trigger nav__item nav__active" href="#!"
-                                data-target="dropdown1">Verwarmingsketel
-                                plaatsen<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a class="nav__item" href="collapsible.html">Verwarmingsoplossingen</a></li>
-                        <li><a class="nav__item" href="mobile.html">Onderhoud</a></li>
-                        <li><a class="nav__item" href="mobile.html">Realisaties</a></li>
-                        <li><a class="nav__item" href="mobile.html">Contact</a></li>
+                    <!-- mobile and tablet menu content -->
+                    <ul id="mobile-menu" class="side-nav nav">
+                        <li class="no-padding">
+                            <ul class="collapsible collapsible-accordion">
+                                <li>
+                                    <!-- Mobile and tablet menu dropdown trigger -->
+                                    <a class="collapsible-header side-nav__item"> Verwarmingsketel
+                                        plaatsen
+                                        <i class="material-icons right">
+                                            arrow_drop_down
+                                        </i>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <!-- Mobile and tablet dropdown content -->
+                                        <ul>
+                                            <li><a class="side-nav__item" href="#!">Woning</a></li>
+                                            <li><a class="side-nav__item" href="#!">Residenties</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="side-nav__item side-nav__item-active" href="#!">Verwarmingsoplossingen</a></li>
+                        <li><a class="side-nav__item" href="#!">Onderhoud</a></li>
+                        <li><a class="side-nav__item" href="#!">Realisaties</a></li>
+                        <li><a class="side-nav__item" href="#!">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-            <ul class="sidenav" id="mobile-demo">
-                <li><a class="dropdown-trigger sidenav__item" href="#!" data-target="dropdown2">Verwarmingsketel
-                        plaatsen<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a class="sidenav__item active" href="#">Verwarmingsoplossingen</a></li>
-                <li><a class="sidenav__item" href="#">Onderhoud</a></li>
-                <li><a class="sidenav__item" href="#">Realisaties</a></li>
-                <li><a class="sidenav__item" href="#">Contact</a></li>
-            </ul>
-            <!-- Dropdown Structure -->
-            <ul id="dropdown2" class="dropdown-content">
-                <li><a class="nav__item" href="#!">Woning</a></li>
-                <li><a class="nav__item" href="#!">Residenties</a></li>
-            </ul>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -391,23 +428,33 @@
             <div class="c-logo__cards row">
                 <article class="col s12 m12 l6 xl4">
                     <div class="c-logo__cards-item z-depth-1">
-                        <a href="https://www.vaillant.be/consumenten/" target="_blank"><img class="c-logo__cards-img" src="images/vaillant-logo.png" alt="Vaillant" title="Vaillant"></a>
+                        <a href="https://www.vaillant.be/consumenten/" target="_blank"><img class="c-logo__cards-img"
+                                src="images/vaillant-logo.png" alt="Vaillant" title="Vaillant"></a>
                         <h2 class="c-logo__cards-title">De Vaillant-ketels</h2>
-                        <p class="c-logo__cards-text">Dit merk dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België.</p>
+                        <p class="c-logo__cards-text">Dit merk dat in 1874 opgericht werd in Duitsland, is sinds 1948 op
+                            de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie.
+                            Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België.</p>
                     </div>
                 </article>
                 <article class="col s12 m12 l6 xl4">
                     <div class="c-logo__cards-item z-depth-1">
-                        <a href="https://www.viessmann.be/" target="_blank"><img class="c-logo__cards-img" src="images/viessmann-logo.png" alt="Viessmann" title="Viessmann"></a>
+                        <a href="https://www.viessmann.be/" target="_blank"><img class="c-logo__cards-img"
+                                src="images/viessmann-logo.png" alt="Viessmann" title="Viessmann"></a>
                         <h2 class="c-logo__cards-title">De verwarmingsinstallaties van Junkers/Bosch</h2>
-                        <p class="c-logo__cards-text">Dit Duitse merk dat in 1917 werd opgericht, wordt gekenmerkt door innovatie. De verwarmingssystemen van Viessmann (stookolie, gas zonne-energie, warmtepomp, boilers...) zijn toonaangevend in het prenium segment.</p>
+                        <p class="c-logo__cards-text">Dit Duitse merk dat in 1917 werd opgericht, wordt gekenmerkt door
+                            innovatie. De verwarmingssystemen van Viessmann (stookolie, gas zonne-energie, warmtepomp,
+                            boilers...) zijn toonaangevend in het prenium segment.</p>
                     </div>
                 </article>
                 <article class="col s12 m12 l6 xl4">
                     <div class="c-logo__cards-item z-depth-1">
-                        <a href="https://www.bosch.be/nl/" target="_blank"><img class="c-logo__cards-img" src="images/bosch-logo.png" alt="Bosch" title="Bosch"></a>
+                        <a href="https://www.bosch.be/nl/" target="_blank"><img class="c-logo__cards-img"
+                                src="images/bosch-logo.png" alt="Bosch" title="Bosch"></a>
                         <h2 class="c-logo__cards-title">De verwarmingsinstallaties van Junkers/Bosch</h2>
-                        <p class="c-logo__cards-text">Junkers maakte sinds 1932 deel uit van de groep Bosch, maar het was wachten tot 2018 voor de naam officieel verdween en het gewoon Bosch werd. Ook dit merk is actief in alle segmenten van de verwarmingssystemen: gecombineerde verwarmingsketels, condensatieketels, wandketels en vloerketels, waterpompen...</p>
+                        <p class="c-logo__cards-text">Junkers maakte sinds 1932 deel uit van de groep Bosch, maar het
+                            was wachten tot 2018 voor de naam officieel verdween en het gewoon Bosch werd. Ook dit merk
+                            is actief in alle segmenten van de verwarmingssystemen: gecombineerde verwarmingsketels,
+                            condensatieketels, wandketels en vloerketels, waterpompen...</p>
                     </div>
                 </article>
             </div>

@@ -202,9 +202,9 @@
     color: $color-blue;
     font-weight: bold;
   }
-  &-link{
+  &-link {
     color: $color-orange;
-    &:hover{
+    &:hover {
       color: $color-blue;
       text-decoration: underline;
     }
@@ -515,18 +515,76 @@
   }
 }
 
-.c-plaatsen{
-
-  &__link{
+.c-plaatsen {
+  &__link {
     color: $color-orange;
 
-    &:hover{
+    &:hover {
       color: $color-blue;
       text-decoration: underline;
     }
   }
 
-  &__img{
+  &__img {
     border-radius: $img-border-radius;
   }
 }
+
+.c-404 {
+  overflow: hidden;
+  position: relative;
+  &-img {
+    height: 72rem;
+    @media screen and (min-width: 1200px) {
+      margin-left: 20rem;
+      margin-top: 3.025rem;
+    }
+  }
+  &-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    @media screen and (min-width: 1000px) {
+      right: 28rem;
+    }
+  }
+}
+
+.c-ketels {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  &-card {
+    background-color: $color-blue;
+    border-radius: 10px !important;
+    @media screen and (min-width: 1100px) {
+      min-height: 25rem;
+      padding-top: 10rem;
+    }
+  }
+  &-cards {
+    box-shadow: none !important;
+  }
+  &-img {
+    justify-content: center;
+    height: 10rem;
+    transition: ease-in 0.2s;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  &-title {
+    text-align: center;
+    font-family: $font-titles;
+    padding-bottom: 2rem;
+  }
+}
+
+// <a href="">
+// <div class="card blue-grey ">
+//     <div class="card-content white-text c-ketels-card">
+//         <span class="card-title c-ketels-title">Woning</span>
+//         <img src="icons/woning.svg" class="c-ketels-img" alt="icoon van een huis">
+//     </div>
+// </div>
+// </div></a>

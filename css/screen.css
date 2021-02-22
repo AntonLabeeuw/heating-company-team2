@@ -1520,6 +1520,76 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
   border-radius: 10px;
 }
 
+.c-404 {
+  overflow: hidden;
+  position: relative;
+}
+
+.c-404-img {
+  height: 72rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .c-404-img {
+    margin-left: 20rem;
+    margin-top: 3.025rem;
+  }
+}
+
+.c-404-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .c-404-btn {
+    right: 28rem;
+  }
+}
+
+.c-ketels {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.c-ketels-card {
+  background-color: #023c48;
+  border-radius: 10px !important;
+}
+
+@media screen and (min-width: 1100px) {
+  .c-ketels-card {
+    min-height: 25rem;
+    padding-top: 10rem;
+  }
+}
+
+.c-ketels-cards {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.c-ketels-img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.c-ketels-img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.c-ketels-title {
+  text-align: center;
+  font-family: "omnium", "sans-serif";
+  padding-bottom: 2rem;
+}
+
 .c-login-titel {
   text-align: center;
 }

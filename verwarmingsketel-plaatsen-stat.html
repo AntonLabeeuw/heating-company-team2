@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verwarmingsketel plaatsen</title>
-    
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -18,6 +19,7 @@
     <!-- eigen css -->
     <link rel="stylesheet" href="css/screen.css">
 </head>
+
 <body>
     <header>
         Dit is een header
@@ -25,10 +27,30 @@
     <main>
         <div class="container">
             <h1>Plaatsing verwarmingsketel</h1>
-            <p>The Heating Company is gespecialiseerd in het plaatsen van verwarmingsketels in zowel woningen als residenties</p>
+            <p>The Heating Company is gespecialiseerd in het plaatsen van verwarmingsketels in zowel woningen als
+                residenties</p>
             <h2>Waar wil je een verwarmingsketel laten plaatsen?</h2>
-            <p><a href="" class="c-plaatsen__link">Woning</a></p>
-            <p><a href="" class="c-plaatsen__link">Residentie</a></p>
+            <!-- de 2 cards -->
+            <div class="row c-ketels">
+                <div class="col s12 m6">
+                    <a href="">
+                        <div class="card c-ketels-cards">
+                            <div class="card-content white-text c-ketels-card">
+                                <span class="card-title c-ketels-title">Woning</span>
+                                <img src="icons/woning.svg" class="c-ketels-img" alt="icoon van een huis">
+                            </div>
+                        </div>
+                </div></a>
+                <div class="col s12 m6">
+                    <a href="">
+                        <div class="card c-ketels-cards">
+                            <div class="card-content white-text c-ketels-card">
+                                <span class="card-title  c-ketels-title">Residentie</span>
+                                <img src="icons/residentie.svg" class="c-ketels-img" alt="icoon van een residentie">
+                            </div>
+                        </div>
+                </div></a>
+            </div>
         </div>
         <div class="container-fluid c-banner-contact">
             <div class="container">
@@ -47,4 +69,5 @@
         Dit is een footer
     </footer>
 </body>
+
 </html>
